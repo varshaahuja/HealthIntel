@@ -1,0 +1,35 @@
+<app-navbar>
+</app-navbar>
+<div class="row">
+    <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5">
+        <app-sidebar></app-sidebar>
+    </div>
+
+    <div class="col p-5">
+
+        <a class="btn btn-lg btn-white text-info border" *ngIf="role=='admin'" routerLink="/addEvent"><i class="fa fa-plus-circle"></i> Add an Event </a>
+
+        <div class="card mt-5" *ngFor="let event of allEvents">
+            <div class="row">
+                <div class="col-2 bg-info p-5">
+                    {{event.date| date:'mediumDate'}}
+                </div>
+                <div class="col-8 p-3">
+                    <a class="btn font-weight-bold" (click)="viewEvent(event.id)" > {{event.eventName}} </a><br><br>
+                    <span class="text-muted">{{event.location}}</span>
+                </div>
+                <div class="col-2 p-5"> 
+                    <div class="custom-control custom-switch" *ngIf="role=='user'">
+                        <input type="checkbox" class="custom-control-input" id="customSwitches">
+                        <label class="custom-control-label" for="customSwitches">Check In</label>
+                    </div>
+                    <i class="fa fa-edit text-info fa-lg mr-3" *ngIf="role=='admin'" (click)="viewEvent(event.id)"></i>
+                    <i class="fa fa-trash text-danger fa-lg" (click)="cancelEvent(event.id)" *ngIf="role=='admin'"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="role=='user'">
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,55 @@
+<!-- <div class="Absolute-Center is-Responsive"> -->
+  <div class="wrapper d-flex align-items-center justify-content-center">
+    <div class="card text-center">
+      <div class="card-header">
+        <a class="h4 font-weight-bold font-italic text-info text-decoration-none" routerLink="/"> <i class="fa fa-heart"></i>Health Intel</a>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <!--Email-->
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" id="username" class="form-control" formControlName="username" placeholder="Username"
+                required>
+            </div>
+            <div *ngIf="formErrors.username" class="text-danger">{{formErrors.username}} </div>
+          </div>
+  
+          <div class="form-group">
+            <div class="input-group">
+              <input id="password" class="form-control" formControlName="password"
+                placeholder="Password" required>
+
+            </div>
+            <div *ngIf="formErrors.username" class="text-danger">{{formErrors.password}} </div>
+          </div>
+          <span class="text-danger">{{errorMsg}}</span>
+          <input type="submit" class="btn btn-info text-uppercase m-3 p-2 pl-3 pr-3 border-0 " value="Log In" [disabled]="!loginForm.valid">
+        </form>
+        <a class="link" routerLink="/forgotPassword"> Forgot Password </a>
+
+        <hr>
+        <div class="socialLogin">
+
+          <div class="row">
+
+            <div class="col float-left">
+              <a class="w-100 btn btn-danger text-white"><i class="fa fa-google"></i> Google </a>
+            </div>
+
+            <div class="col float-right">
+              <a class="w-100 btn text-white facebook"><i class="fa fa-facebook"></i> Facebook </a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+  
+  
+  

@@ -1,0 +1,64 @@
+<app-navbar>
+</app-navbar>
+<div class="row">
+    <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col p-5">
+
+        <div class="card mt-5">
+            <div class="card-header">
+                <strong> Add Insurance Provider Details </strong>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="insuranceForm" (ngSubmit)="onSubmit()">
+
+                    <!--Insurance Provider -->
+                    <div class="row">
+                        <label class="col-md-2 col-form-label"> Insurance Provider </label>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" id="insuranceName" class="form-control"
+                                        formControlName="insuranceName" placeholder="Insurance Provider" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--IRDA Number -->
+                    <div class="row">
+                        <label class="col-md-2 col-form-label"> IRDA Number </label>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" id="irda" class="form-control"
+                                        formControlName="irda" placeholder="IRDA Number" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Number of Users-->
+                    <div class="row">
+                        <label class="col-md-2 col-form-label"> Number of Users </label>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" id="userNumber" class="form-control"
+                                        formControlName="irda" placeholder="Number of Users" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" class="btn-info float-center " value="Submit" [disabled]="!insuranceForm.valid">
+                    </div>
+                    
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+<app-navbar>
+</app-navbar>
+<div class="row">
+    <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col p-5">
+
+        <div class="card mt-5">
+
+            <div class="card-header">
+                <span class="float-left pt-2 h4"> {{user}} </span>
+                <button class="btn btn-info float-right"> Save </button>
+            </div>
+            <br>
+            <div class="card-body">
+
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <!--Username -->
+                            <td>
+                                <span class="text-muted">Username</span> <a class="fa fa-edit ml-2 text-info"></a> <br>
+                                <strong>{{this.profile.username}}</strong>
+
+                            </td>
+                            <!--Email Id-->
+                            <td>
+                                <span class="text-muted">Email Id </span><a class="fa fa-edit ml-2 text-info"></a><br>
+                                <strong> {{this.profile.email}} </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!--First Name-->
+                            <td>
+                                <span class="text-muted">First Name</span><a class="fa fa-edit ml-2 text-info"></a><br>
+                                <strong> {{this.profile.firstName}} </strong>
+                            </td>
+                            <!--Last Name -->
+                            <td>
+                                <span class="text-muted">Last Name</span><a class="fa fa-edit ml-2 text-info"></a><br>
+                                <strong> {{this.profile.lastName}} </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!--Social Security Number -->
+                            <td>
+                                <span class="text-muted">Social Security Number </span><a
+                                    class="fa fa-edit ml-2 text-info"></a><br>
+                                <strong> {{this.profile.ssn}} </strong>
+                            </td>
+                            <!--Insurance Number -->
+                            <td>
+                                <span class="text-muted">Insurance Id</span><a
+                                    class="fa fa-edit ml-2 text-info"></a><br>
+                                <strong> {{this.profile.insuranceId}} </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!--Emergency Contact Number -->
+                            <td>
+                                <span class="text-muted">Emergency contact Number </span><a
+                                    class="fa fa-edit ml-2 text-info"></a><br>
+                                <strong> {{this.profile.emergencyContactNumber}} </strong>
+                            </td>
+                            <!--Emergency Contacy Name -->
+                            <td>
+                                <span class="text-muted">Emergency contact Name</span><a
+                                    class="fa fa-edit ml-2 text-info"></a><br>
+                                <strong> {{this.profile.emergencyContactName}} </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!--Contact Number -->
+                            <td>
+                                <span class="text-muted">Contact Number </span><a
+                                    class="fa fa-edit ml-2 text-info"></a><br>
+                                <strong> {{this.profile.ssn}} </strong>
+                            </td>
+                            <!--Address -->
+                            <td>
+                                <span class="text-muted">Address </span><a class="fa fa-edit ml-2 text-info"></a><br>
+                                <strong> {{this.profile.insuranceId}} </strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+<app-footer></app-footer>

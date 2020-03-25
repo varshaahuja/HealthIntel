@@ -1,0 +1,50 @@
+<app-navbar>
+</app-navbar>
+<div class="row">
+    <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5">
+        <app-sidebar></app-sidebar>
+    </div>
+
+    <div class="col p-5 ">
+        <i *ngIf="loading" aria-hidden="true" class="fa fa-spinner fa-5x fa-spin"></i>
+        <div *ngIf="!loading">
+
+            <div class="card mt-5">
+                <div class="card-header">
+                    <span class="float-left font-weight-bold pt-2"> Event Details </span>
+                    <button class="btn btn-info float-right">Edit</button>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <h5>Event Name</h5>
+                                <span class="text-muted"> {{event.eventName }}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Location</h5>
+                                <span class="text-muted">{{event.location}} </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Date</h5>
+                                <span class="text-muted">{{event.date | date:'mediumDate'}} </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Description</h5>
+                                <span class="text-muted"> </span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+<app-navbar>
+</app-navbar>
+<div class="row">
+    <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5"><app-sidebar></app-sidebar></div>
+    <div class="col p-5">
+        
+        <div class="card mt-5">
+
+            <div class="card-header">
+                <strong>Add Event Details</strong>
+            </div>
+
+            <div class="card-body text-center">
+
+                <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+                    <!--Event Name -->
+                    <div class="row">
+                        <label  class="col-md-2 col-form-label text-left">
+                            Event Name
+                        </label>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" id="eventName" class="form-control" formControlName="eventName" placeholder="Event Name" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="row">
+                        <label  class="col-md-2 col-form-label text-left">
+                            Address
+                        </label>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" id="address" class="form-control" formControlName="location" placeholder="Address" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Date -->
+                    <div class="row">
+                        <label  class="col-md-2 col-form-label text-left">
+                            Date
+                        </label>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="date" id="date" class="form-control" formControlName="location" placeholder="Date" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="row">
+                        <label  class="col-md-2 col-form-label text-left">
+                            Description
+                        </label>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" id="date" class="form-control" formControlName="location" placeholder="Description" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="submit" class="btn-info " value="Submit" [disabled]="!eventForm.valid">
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

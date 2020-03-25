@@ -1,0 +1,14 @@
+[
+    {
+        "id":"1" ,
+        "insuranceName":"Aetnam",
+        "IRDA":"43521",
+        "users":"204"
+    },
+    {
+        "id":"2" ,
+        "insuranceName":"United Health",
+        "IRDA":"77987",
+        "users":"343"
+    }
+]

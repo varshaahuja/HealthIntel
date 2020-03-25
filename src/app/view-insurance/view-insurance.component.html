@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<div class="row">
+  <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5">
+      <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="col p-5">
+
+    <div class="card mt-5">
+
+      <div class="card-body">
+
+        <table class="table">
+
+          <tr>
+            <td>
+             <strong>Insurance Companies</strong>
+            </td>
+
+            <td>
+              <strong>Permit ID</strong>
+             </td>
+
+            <td>
+              <strong>No. of Users </strong>
+            </td>
+            <td></td>
+          </tr>
+          <tr *ngFor="let insurance of insurances">
+
+            <td> {{insurance.insuranceName}}</td>
+            <td> {{insurance.IRDA}} </td>
+            <td> {{insurance.IRDA}} </td>
+            <td> <a class="btn btn-info text-white"> View Profile </a> </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>

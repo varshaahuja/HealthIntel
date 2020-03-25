@@ -1,0 +1,66 @@
+<!--User Sidebar -->
+<ul class="list-unstyled" *ngIf ="role =='user'">
+  <!--Dashboard-->
+  <li class="active">
+      <a class="sidebar-item text-info" routerLink="/userDashboard"><i class="fa fa-th"> </i> Dashboard</a>
+  </li>
+  <!--Profile -->
+  <li>
+    <a class="sidebar-item text-info" routerLink="/profile"><i class="fa fa-user"> </i> My Profile</a>
+  </li> 
+  <!--Appointments History -->
+  <li>
+      <a class="sidebar-item text-info" routerLink="/userDashboard"><i class="fa fa-calendar"> </i> Appointments History </a>
+  </li>
+
+  <!--All Events-->
+  <li>
+    <a class="sidebar-item text-info" routerLink="/events"><i class="fa fa-list-ul"></i> All Events </a>
+  </li> 
+
+  <!--Inbox-->
+  <li>
+    <a class="sidebar-item text-info" routerLink="/inbox"><i class="fa fa-inbox"></i> Inbox </a>
+  </li> 
+
+</ul>
+
+<!-- Admin Sidebar -->
+
+<ul class="list-unstyled" *ngIf="role=='admin'">
+
+  <!--Dashboard-->
+  <li class="active">
+      <a class="sidebar-item text-info" routerLink="/adminDashboard"><i class="fa fa-th"></i> Dashboard </a>
+  </li>
+
+  <!--Appointment-->
+  <li>
+      <a class="sidebar-item text-info" routerLink="/adminDashboard"><i class="fa fa-calendar"></i> User Appointment History </a>
+  </li>
+
+  <!--Add/Update Events-->
+  <li>
+      <a class="sidebar-item text-info" routerLink="/events"><i class="fa fa-plus-square"></i> Add/Update Event </a>
+  </li>
+
+  <!--View Insurance Companies-->
+  <li>
+    <a class="sidebar-item text-info" routerLink="/viewInsurance"> <i class="fa fa-users"></i> Insurance Companies </a>
+  </li>
+
+  <!--Add Insurance Companies-->
+  <li>
+    <a class="sidebar-item text-info" routerLink="/addInsurance"> <i class="fa fa-user">  </i> Add Insurance Company </a>
+  </li>
+
+    <!-- Policies -->
+    <li>
+      <a class="sidebar-item text-info" routerLink="/policies"><i class="fa fa-map"></i> Policies </a>
+    </li> 
+
+      <!--Inbox-->
+  <li>
+    <a class="sidebar-item text-info" routerLink="/inbox"><i class="fa fa-inbox"></i> Inbox </a>
+  </li> 
+</ul>

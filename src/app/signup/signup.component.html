@@ -1,0 +1,179 @@
+<!-- <div class="Absolute-Center is-Responsive"> -->
+<div class="wrapper d-flex align-items-center justify-content-center">
+  <div class="card text-center">
+    <div class="card-header">
+      <a class="h4 font-weight-bold font-italic text-info text-decoration-none" routerLink="/"> <i
+          class="fa fa-heart"></i> Health Intel</a>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+
+        <!--Email-->
+        <div class="row">
+        <label class="col-md-2 col-form-label">Email</label>
+        <div class="col-md-10">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="email" class="form-control" formControlName="email" placeholder="Emai Id" required>
+          </div>
+          <div *ngIf="formErrors.email" class="text-danger">{{formErrors.email}} </div>
+        </div>
+        </div>
+      </div>
+
+        <!-- First Name -->
+        <div class="row">
+          <label class="col-md-2 col-form-label">First Name</label>
+          <div class="col-md-10">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="firstName" class="form-control" formControlName="firstName" placeholder="First Name"
+              required>
+          </div>
+          <div *ngIf="formErrors.firstName" class="text-danger">{{formErrors.firstName}} </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Last Name -->
+        <div class="row">
+          <label class="col-md-2 col-form-label">Last Name</label>
+          <div class="col-md-10">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="lastName" class="form-control" formControlName="lastName" placeholder="Last Name"
+              required>
+          </div>
+          <div *ngIf="formErrors.lastName" class="text-danger">{{formErrors.lastName}} </div>
+        </div>
+      </div>
+    </div>
+        <!--Insurance Id-->
+        <div class="row">
+          <label class="col-md-2 col-form-label">Insurance ID</label>
+          <div class="col-md-10">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="insuranceId" class="form-control" formControlName="insuranceId"
+              placeholder="Insurance ID" required>
+          </div>
+          <div *ngIf="formErrors.insuranceId" class="text-danger">{{formErrors.insuranceId}} </div>
+        </div>
+      </div>
+    </div>
+        <!-- SSN -->
+        <div class="row">
+          <label class="col-md-2 col-form-label">Social Security Number</label>
+          <div class="col-md-10">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="ssn" class="form-control" formControlName="ssn" placeholder="SSN" required>
+          </div>
+          <div *ngIf="formErrors.ssn" class="text-danger">{{formErrors.ssn}} </div>
+        </div>
+      </div>
+    </div>
+        <!--Contact Number-->
+        <div class="row">
+          <label class="col-md-2 col-form-label">Contact Number</label>
+          <div class="col-md-10">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="contactNumber" class="form-control" formControlName="contactNumber"
+              placeholder="Contact Number" required>
+          </div>
+          <div *ngIf="formErrors.contactNumber" class="text-danger">{{formErrors.contactNumber}} </div>
+        </div>
+      </div>
+    </div>
+        <!--Emergency Contact Number-->
+        <div class="row">
+          <label class="col-md-2 col-form-label">Emergency Contact Number</label>
+          <div class="col-md-10">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="emergencyContactNumber" class="form-control" formControlName="emergencyContactNumber"
+              placeholder="Emergency Contact Number" required>
+          </div>
+          <div *ngIf="formErrors.emergencyContactNumber" class="text-danger">{{formErrors.emergencyContactNumber}}
+          </div>
+        </div>
+      </div>
+    </div>
+        <!--Emergency Contact Name-->
+        <div class="row">
+          <label class="col-md-2 col-form-label">Emergency Contact Name</label>
+          <div class="col-md-10">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="emergencyContactName" class="form-control" formControlName="emergencyContactName"
+              placeholder="Emergency Contact Name" required>
+          </div>
+          <div *ngIf="formErrors.emergencyContactName" class="text-danger">{{formErrors.emergencyContactName}} </div>
+        </div>
+      </div>
+    </div>
+        <!-- Username -->
+        <div class="row">
+          <label class="col-md-2 col-form-label">User Name</label>
+          <div class="col-md-10">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="userName" class="form-control" formControlName="userName" placeholder="User Name"
+              required>
+          </div>
+          <div *ngIf="formErrors.username" class="text-danger">{{formErrors.username}} </div>
+        </div>
+      </div>
+    </div>
+        <!-- Password -->
+        <div class="row">
+          <label class="col-md-2 col-form-label">Password</label>
+          <div class="col-md-10">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="password" class="form-control" formControlName="password" placeholder="Password"
+              required>
+          </div>
+          <div *ngIf="formErrors.password" class="text-danger">{{formErrors.password}} </div>
+        </div>
+      </div>
+    </div>
+        <!--Confirm Password -->
+        <div class="row">
+          <label class="col-md-2 col-form-label">Confirm Password</label>
+          <div class="col-md-10">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="confirmPassword" class="form-control" formControlName="confirmPassword"
+              placeholder="confirmPassword" required>
+          </div>
+          <div *ngIf="formErrors.confirmPassword" class="text-danger">{{formErrors.confirmPassword}} </div>
+        </div>
+      </div>
+    </div>
+        <!-- Address -->
+        <div class="row">
+          <label class="col-md-2 col-form-label">Address</label>
+          <div class="col-md-10">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="address" class="form-control" formControlName="address" placeholder="address"
+              required>
+          </div>
+          <div *ngIf="formErrors.address" class="text-danger">{{formErrors.address}} </div>
+        </div>
+      </div>
+    </div>
+        <!--Accept Agreement -->
+        <div class="form-group">
+          <input type="checkbox" id="agreements" name="agreements" required>
+          <span for="horns"> I acknowledge that I have read all the policies and understood all the terms of use and I hereby accept it.</span>
+        </div>
+
+        <span class="text-danger">{{errorMsg}}</span>
+        <input type="submit" class=" btn btn-info m-3 p-3 pl-4 pr-4 border-0 text-uppercase" value="Sign Up" [disabled]="!signupForm.valid">
+      </form>
+    </div>
+  </div>
+</div>

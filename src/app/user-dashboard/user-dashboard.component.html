@@ -1,0 +1,92 @@
+<app-navbar>
+</app-navbar>
+<div class="row">
+    <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5">
+        <app-sidebar></app-sidebar>
+    </div>
+
+    <div class="col mainContent bg-light">
+
+        <div class="row mt-5 pb-3">
+
+            <!--Appointments in dashboard-->
+            <div class="col">
+                <div class="card shadow text-center">
+                    <div class="card-header "> Appointments </div>
+                    <div class="card-body">
+                        <div *ngFor="let user of users">
+                            <div *ngIf="user.username==username">
+                                <div *ngIf="user.appointments!=null">
+                                    {{user.appointments}}
+                                </div>
+                                <div *ngIf="user.appointments == 0">
+                                    No appointments scheduled
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Latest Events -->
+            <div class="col">
+
+                <div class="card shadow text-center">
+                    <div class="card-header"> Quiz </div>
+                    <div class="card-body">
+                        <a class="btn btn-info" routerLink="/questions"> Take a Quiz </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--REPORTS -->
+            <div class="col">
+                <div class="card shadow text-center">
+                    <div class="card-header">Latest Event <a class="card-link small float-right"
+                            routerLink="/events">See all
+                            >></a> </div>
+                    <div class="card-body">
+                        <div *ngIf="loading">
+                            <i aria-hidden="true" class="fa fa-spinner fa-5x fa-spin"></i>
+                        </div>
+                        <div *ngIf="!loading">
+                            <h4 class="text-info"> {{latestEvent.eventName}} </h4>
+                            <h6 class="text-muted">{{latestEvent.location}}</h6>
+                            <h6>{{latestEvent.date |date:'mediumDate'}}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-5 pb-3">
+
+            <!--Reports-->
+            <div class="col-4">
+                <div class="card shadow text-center">
+                    <div class="card-header "> Reports </div>
+                    <div class="card-body">
+                        Reports in review
+                    </div>
+                </div>
+            </div>
+
+            <!--Charts-->
+            <div class="col-8">
+                <div class="card shadow text-center">
+                    <div class="card-header "> Charts </div>
+                    <div class="card-body">
+                        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+<app-footer></app-footer>

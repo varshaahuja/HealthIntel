@@ -1,0 +1,33 @@
+[
+{
+    "email":"inteluser@gmail.com",
+    "password":"password",
+    "role":"user",
+    "username":"inteluser",
+    "firstName": "intel",
+    "lastName":"user",
+    "insuranceId":"12345",
+    "ssn":"09876",
+    "contactNumber":"11111",
+    "emergencyContactNumber":"22222",
+    "emergencyContactName":"xxxxx",
+    "address":"abcdefghij",
+    "appointments":[]
+},
+{
+    "email":"inteladmin@gmail.com",
+    "password":"password",
+    "role": "admin",
+    "username":"inteladmin",
+    "firstName": "intel",
+    "lastName":"admin",
+    "insuranceId":"12345",
+    "ssn":"54321",
+    "contactNumber":"22222",
+    "emergencyContactNumber":"33333",
+    "emergencyContactName":"yyyyy",
+    "address":"abcdefghij",
+    "appointments":[]
+
+}
+]

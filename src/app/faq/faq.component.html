@@ -1,0 +1,45 @@
+<div class="jumbotron bg-info">
+
+    <div class="float-left">
+        <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
+    </div>
+    <div class="text-center">
+        <span class="text-white h3"> Welcome! How can we help ? </span>
+    </div>
+</div>
+
+<div class="row" *ngIf= "!user">
+<div class="col text-center">
+    <div class="card">
+        <div class="card-body">
+            <p class="font-weight-bold"> Please log in to your account to access more help </p>
+            <button class="d-inline btn btn-info mr-3" routerLink="/login">Login</button>
+            <button class="d-inline btn btn-info" routerLink="/signup"> Signup</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="row mt-4">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">      
+                <p class='h4 text-center'> Frequently Asked Question's </p><hr>
+                <div *ngFor="let faq of allFaqs" >
+                    
+                    <div class="card faqCards">
+                        <div class="card-header">
+                            <span class="font-weight-bold">{{faq.question}} </span>
+                        </div>
+
+                            <div class="card-body">
+                               <span> {{faq.answer}} </span> 
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

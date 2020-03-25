@@ -1,0 +1,40 @@
+<div class="jumbotron bg-info">
+
+  <div class="float-left">
+      <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
+  </div>
+  <div class="text-center">
+      <span class="text-white h3">Our Policies </span>
+  </div>
+</div>
+
+<div class="row" *ngIf="!user">
+  <div class="col text-center">
+      <div class="card">
+          <div class="card-body">
+              <p class="font-weight-bold"> Please log in to your account to access more help </p>
+              <button class="d-inline btn btn-info mr-3" routerLink="/login">Login</button>
+              <button class="d-inline btn btn-info" routerLink="/signup"> Signup</button>
+          </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col text-center">
+        <div class="card">
+
+          <div class="card-body">
+            <p class='h4 text-center'> Policies </p><hr>
+
+          </div>
+
+        </div>
+
+
+    </div>
+    </div>
+
+
+
+  <app-footer></app-footer> 

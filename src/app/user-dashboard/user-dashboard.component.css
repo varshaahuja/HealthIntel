@@ -1,0 +1,8 @@
+.sidebar{
+    min-height: 72vh;
+}
+
+.card{
+    overflow: scroll;
+
+}

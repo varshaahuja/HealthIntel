@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+
+<div class="row">
+  <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5">
+      <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="col p-5">
+
+    <div class="card inbox mt-3">
+      <div class="card-header text-center h4">
+        Inbox
+      </div>
+      <div class="row mt-3">
+        <div class="col-11 ml-2">
+          <textarea class="form-control message" placeholder="Please enter the message here"  ng-model="messageId"></textarea>
+        </div>
+        <div class="col p-2">
+          <a class="btn btn-info text-white" (click)="addMessage()">Send</a>
+        </div>
+      </div>
+
+      <div class="row p-3">
+
+        <div class="card form-control text-center">
+          No New Messages
+          
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+</div>  
+
+<div *ngIf="role=='user'">
+  <app-footer></app-footer>
+</div>
