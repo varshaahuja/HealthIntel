@@ -16,32 +16,32 @@
   <div class="col p-5">
 
     <div class="card inbox mt-3">
-      <div class="card-header text-center h4">
-        Inbox
-      </div>
-      <div class="row mt-3">
-        <div class="col-11 ml-2">
-          <textarea class="form-control message" placeholder="Please enter the message here"  ng-model="messageId"></textarea>
-        </div>
-        <div class="col p-2">
-          <a class="btn btn-info text-white" (click)="addMessage()">Send</a>
-        </div>
-      </div>
 
-      <div class="row p-3">
 
-        <div class="card form-control text-center">
-          No New Messages
-          
+      <!--User Page Appointments-->
+      <div *ngIf="role=='user'">
+        <div class="card-body" *ngIf="userAppointments==null">
+          No Appointments Scheduled
+        </div>
+        <div class="card-body" *ngIf="userAppointments!=null">
+          adsa
         </div>
       </div>
 
+      <!--Admin Page Appointments-->
+      <div *ngIf="role=='admin'">
+        <div class="card-body" *ngIf="userAppointments==null">
+          No Appointments Scheduled
+        </div>
+        <div class="card-body" *ngIf="userAppointments!=null">
+          adsa
+        </div>
+      </div>
 
 
     </div>
   </div>
-
-</div>  
+</div>
 
 <div *ngIf="role=='user'">
   <app-footer></app-footer>

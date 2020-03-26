@@ -19,6 +19,7 @@ import { InboxComponent } from '../inbox/inbox.component';
 import { PoliciesComponent } from '../policies/policies.component';
 import { AboutUsComponent } from '../about-us/about-us.component';
 import { QuestionsComponent } from '../questions/questions.component';
+import { AppointmentsComponent } from '../appointments/appointments.component';
 
 const routes: Routes = [
 
@@ -76,6 +77,9 @@ const routes: Routes = [
   },
   {
     path:"questions", component:QuestionsComponent
+  },
+  {
+    path:"appointments", component:AppointmentsComponent
   }
 ]
 

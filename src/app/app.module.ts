@@ -25,6 +25,7 @@ import { FaqComponent } from './faq/faq.component';
 import { InboxComponent } from './inbox/inbox.component';
 import { PoliciesComponent } from './policies/policies.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { AppointmentsComponent } from './appointments/appointments.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     InboxComponent,
     PoliciesComponent,
     AboutUsComponent,
+    AppointmentsComponent,
   ],
   imports: [
     AppRoutingModule,
