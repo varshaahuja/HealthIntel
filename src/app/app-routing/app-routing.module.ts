@@ -58,6 +58,9 @@ const routes: Routes = [
     path:"profile", component: UserProfileComponent
   },
   {
+    path:"profile/:id", component: UserProfileComponent
+  },
+  {
     path:"viewInsurance", component:ViewInsuranceComponent
   },
   {

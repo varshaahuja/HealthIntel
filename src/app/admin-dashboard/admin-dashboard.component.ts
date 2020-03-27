@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LocalStorageService } from '../local-storage.service';
 import { HttpClient } from '@angular/common/http';
 import * as CanvasJS from './../../assets/canvasjs.min'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -10,38 +11,58 @@ import * as CanvasJS from './../../assets/canvasjs.min'
 })
 export class AdminDashboardComponent implements OnInit {
 
-  constructor(private localStorageService:LocalStorageService, private httpClient:HttpClient ){ }
+  constructor(private localStorageService:LocalStorageService, private httpClient:HttpClient, private router:Router){ }
 
   loading=false;
   users:any
+  allAppointments:any;
+
   ngOnInit() {
-        this.localStorageService.getAllUsers().subscribe(data =>{
-          this.users= data;
-        })
+      this.getAllUsers();
+      this.getAllAppointments();
+      this.drawChart();
 
-        let chart = new CanvasJS.Chart("chartContainer", {
-          animationEnabled: true,
-          exportEnabled: true,
-          title: {
-            text: "Basic Column Chart in Angular"
-          },
-          data: [{
-            type: "column",
-            dataPoints: [
-              { y: 71, label: "Green", color: "#009900"},
-              { y: 55, label: "Yellow", color:"#e6e600" },
-              { y: 65, label: "Amber", color:"#FFBF00" },
-              { y: 50, label: "Orange", color:"#FF7F00" },
-              { y: 45, label: "Red", color:"#e60000" },
-            ]
-          }]
+  }
 
+  //Retrieve All Users
+  getAllUsers(){
+    this.localStorageService.getAllUsers().subscribe(data =>{
+      this.users= data;
+    })
+  }
 
+  //Retrieve All Appointments
+  getAllAppointments(){
+    this.localStorageService.getAllAppointments().subscribe((data)=>{
+      this.allAppointments = data;
+    })
+  }
 
-        });
+  //ChartFuntion
+  drawChart(){
+    let chart = new CanvasJS.Chart("chartContainer", {
+      animationEnabled: true,
+      exportEnabled: true,
+      title: {
+        text: "Basic Column Chart in Angular"
+      },
+      data: [{
+        type: "column",
+        dataPoints: [
+          { y: 71, label: "Green", color: "#009900"},
+          { y: 55, label: "Yellow", color:"#e6e600" },
+          { y: 65, label: "Amber", color:"#FFBF00" },
+          { y: 50, label: "Orange", color:"#FF7F00" },
+          { y: 45, label: "Red", color:"#e60000" },
+        ]
+      }]
+    });
+    chart.render();
+  }
 
-        chart.render();
-       
+  viewProfile(id:any){
+    this.router.navigate(['/profile/' + id]);
+
   }
 
 }

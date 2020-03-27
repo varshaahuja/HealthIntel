@@ -2,39 +2,72 @@
 
 <div class="row">
   <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5">
-      
+
     <div class="adminSidebar" *ngIf="role=='admin'">
       <app-sidebar></app-sidebar>
-     </div>
+    </div>
 
-     <div class="userSidebar" *ngIf="role=='user'">
+    <div class="userSidebar" *ngIf="role=='user'">
       <app-sidebar></app-sidebar>
-     </div>
-     
+    </div>
+
   </div>
 
   <div class="col p-5">
 
     <div class="card inbox mt-3">
 
-
+      <div class="card-header h4 text-center"> Appointments History </div>
       <!--User Page Appointments-->
       <div *ngIf="role=='user'">
-        <div class="card-body" *ngIf="userAppointments==null">
+        <div class="card-body" *ngIf="userAppointmets==null">
           No Appointments Scheduled
         </div>
-        <div class="card-body" *ngIf="userAppointments!=null">
-          adsa
+
+        <div class="card-body" *ngIf="userAppointmets!=null">
+          <table class="table">
+            <tr>
+              <th>Appointment Id</th>
+              <th>Appointment Info</th>
+              <th>Date</th>
+              <th>Location</th>
+            </tr>
+
+            <tr *ngFor="let appointment of userAppointmets">
+              <td>{{appointment.id}} </td>
+              <td>{{appointment.appointment}} </td>
+              <td> {{appointment.date| date:'mediumDate' }} </td>
+              <td> {{appointment.location}} </td>
+            </tr>
+          </table>
         </div>
       </div>
 
       <!--Admin Page Appointments-->
       <div *ngIf="role=='admin'">
-        <div class="card-body" *ngIf="userAppointments==null">
+        <div class="card-body" *ngIf="allAppointments==null">
           No Appointments Scheduled
         </div>
-        <div class="card-body" *ngIf="userAppointments!=null">
-          adsa
+        <div class="card-body" *ngIf="allAppointments!=null">
+
+          <table class="table">
+            <tr>
+              <th>Appointment Id</th>
+              <th>User</th>
+              <th>Appointment Info</th>
+              <th>Date</th>
+              <th>Location</th>
+            </tr>
+
+            <tr *ngFor="let appointment of allAppointments">
+              <td>{{appointment.id}} </td>
+              <td>{{appointment.user}} </td>
+              <td>{{appointment.appointment}} </td>
+              <td> {{appointment.date| date:'mediumDate' }} </td>
+              <td> {{appointment.location}} </td>
+            </tr>
+          </table>
+
         </div>
       </div>
 

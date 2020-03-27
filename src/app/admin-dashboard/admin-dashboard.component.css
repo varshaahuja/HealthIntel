@@ -3,9 +3,15 @@
 }
 
 .deck1{
-    min-height: 30vh;
+    height: 30vh;
+    overflow: scroll;
 }
 
 .deck2{
     min-height: 55vh;
+}
+
+.card-header{
+    font-weight: bold;
+    text-align: center;
 }

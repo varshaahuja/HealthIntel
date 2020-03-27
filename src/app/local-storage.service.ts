@@ -49,4 +49,8 @@ export class LocalStorageService {
     return this.httpClient.get('/assets/data/questions.json');
   }
 
+  getAllAppointments(){
+    return this.httpClient.get('/assets/data/appointments.json');
+  }
+
 }

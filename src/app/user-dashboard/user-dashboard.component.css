@@ -2,7 +2,15 @@
     min-height: 72vh;
 }
 
-.card{
+.deck1{
+    height: 30vh;
     overflow: scroll;
+}
 
+.deck2{
+    min-height: 50vh;
+}
+
+.card-header{
+    font-weight: bold;
 }

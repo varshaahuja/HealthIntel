@@ -10,7 +10,7 @@
 
             <div class="card-header">
                 <span class="float-left pt-2 h4"> {{user}} </span>
-                <button class="btn btn-info float-right"> Save </button>
+                <button class="btn btn-info float-right" *ngIf="role=='user'"  > Save </button>
             </div>
             <br>
             <div class="card-body">
@@ -20,25 +20,25 @@
                         <tr>
                             <!--Username -->
                             <td>
-                                <span class="text-muted">Username</span> <a class="fa fa-edit ml-2 text-info"></a> <br>
+                                <span class="text-muted">Username</span> <a class="fa fa-edit ml-2 text-info" *ngIf="role=='user'"></a> <br>
                                 <strong>{{this.profile.username}}</strong>
 
                             </td>
                             <!--Email Id-->
                             <td>
-                                <span class="text-muted">Email Id </span><a class="fa fa-edit ml-2 text-info"></a><br>
+                                <span class="text-muted">Email Id </span><a class="fa fa-edit ml-2 text-info" *ngIf="role=='user'"></a><br>
                                 <strong> {{this.profile.email}} </strong>
                             </td>
                         </tr>
                         <tr>
                             <!--First Name-->
                             <td>
-                                <span class="text-muted">First Name</span><a class="fa fa-edit ml-2 text-info"></a><br>
+                                <span class="text-muted">First Name</span><a class="fa fa-edit ml-2 text-info" *ngIf="role=='user'"></a><br>
                                 <strong> {{this.profile.firstName}} </strong>
                             </td>
                             <!--Last Name -->
                             <td>
-                                <span class="text-muted">Last Name</span><a class="fa fa-edit ml-2 text-info"></a><br>
+                                <span class="text-muted">Last Name</span><a class="fa fa-edit ml-2 text-info" *ngIf="role=='user'"></a><br>
                                 <strong> {{this.profile.lastName}} </strong>
                             </td>
                         </tr>
@@ -46,13 +46,13 @@
                             <!--Social Security Number -->
                             <td>
                                 <span class="text-muted">Social Security Number </span><a
-                                    class="fa fa-edit ml-2 text-info"></a><br>
+                                    class="fa fa-edit ml-2 text-info" *ngIf="role=='user'"></a><br>
                                 <strong> {{this.profile.ssn}} </strong>
                             </td>
                             <!--Insurance Number -->
                             <td>
                                 <span class="text-muted">Insurance Id</span><a
-                                    class="fa fa-edit ml-2 text-info"></a><br>
+                                    class="fa fa-edit ml-2 text-info" *ngIf="role=='user'"></a><br>
                                 <strong> {{this.profile.insuranceId}} </strong>
                             </td>
                         </tr>
@@ -60,13 +60,13 @@
                             <!--Emergency Contact Number -->
                             <td>
                                 <span class="text-muted">Emergency contact Number </span><a
-                                    class="fa fa-edit ml-2 text-info"></a><br>
+                                    class="fa fa-edit ml-2 text-info" *ngIf="role=='user'"></a><br>
                                 <strong> {{this.profile.emergencyContactNumber}} </strong>
                             </td>
                             <!--Emergency Contacy Name -->
                             <td>
                                 <span class="text-muted">Emergency contact Name</span><a
-                                    class="fa fa-edit ml-2 text-info"></a><br>
+                                    class="fa fa-edit ml-2 text-info" *ngIf="role=='user'"></a><br>
                                 <strong> {{this.profile.emergencyContactName}} </strong>
                             </td>
                         </tr>
@@ -74,12 +74,12 @@
                             <!--Contact Number -->
                             <td>
                                 <span class="text-muted">Contact Number </span><a
-                                    class="fa fa-edit ml-2 text-info"></a><br>
+                                    class="fa fa-edit ml-2 text-info" *ngIf="role=='user'"></a><br>
                                 <strong> {{this.profile.ssn}} </strong>
                             </td>
                             <!--Address -->
                             <td>
-                                <span class="text-muted">Address </span><a class="fa fa-edit ml-2 text-info"></a><br>
+                                <span class="text-muted">Address </span><a class="fa fa-edit ml-2 text-info" *ngIf="role=='user'"></a><br>
                                 <strong> {{this.profile.insuranceId}} </strong>
                             </td>
                         </tr>

@@ -11,16 +11,35 @@
             <div class="col">
                 <div class="card shadow deck1">
                     <div class="card-header">
-                        Appointments
+                        Scheduled Appointments
                     </div>
-                    <div class="card-body"></div>
+                    <div class="card-body">
+                        <table class="table">
+                            <tr>
+                              <th>Appointment Id</th>
+                              <th>User</th>
+                              <th>Appointment Info</th>
+                              <th>Date</th>
+                              <th>Location</th>
+                            </tr>
+                
+                            <tr *ngFor="let appointment of allAppointments">
+                              <td>{{appointment.id}} </td>
+                              <td>{{appointment.user}} </td>
+                              <td>{{appointment.appointment}} </td>
+                              <td> {{appointment.date| date:'mediumDate' }} </td>
+                              <td> {{appointment.location}} </td>
+                            </tr>
+                          </table>
+                    </div>
+                    
                     </div>
             </div>
 
             <!--Insurance Companies-->
             <div class="col">
                 <div class="card shadow deck1 ">
-                    <div class="card-header text-center"> Insurance Companies </div>
+                    <div class="card-header"> Insurance Companies </div>
                     Bye World
                 </div>
             </div>
@@ -28,7 +47,7 @@
             <!--Pending Report Analysis-->
             <div class="col">
                 <div class="card shadow deck1">
-                    <div class="card-header text-center"> Pending Report Analysis</div>
+                    <div class="card-header"> Pending Report Analysis</div>
                     asda
                 </div>
             </div>
@@ -39,7 +58,7 @@
             <!--Users-->
                 <div class="col-4">
                     <div class="card shadow deck2">
-                        <div class="card-header text-center"> Users </div>
+                        <div class="card-header"> Users </div>
                         <div class="card-body">
     
                             <table class="table">
@@ -61,7 +80,7 @@
                                             {{user.insuranceId}}
                                         </td>
                                         <td>
-                                            <button class="btn btn-info"> View Profile </button>
+                                            <button class="btn btn-info" (click)="viewProfile(user.id)"> View Profile </button>
                                         </td>
                                     </tr>
                                 </tbody>

@@ -6,11 +6,15 @@
 .card {
     border-radius: 10px 10px 10px 10px;
     background: #ffff;
-    width:75em
+    min-width: 50em;
   }
-  
-input[type=submit]  {
-    font-size: 13px;
+
+  .col-form-label{
+    font-weight: bold;
+  }
+
+  .btn{
+    border-radius: 25px;
   }
   
   input[type=submit]:active {

@@ -5,19 +5,24 @@
         <app-sidebar></app-sidebar>
     </div>
 
-    <div class="col mainContent bg-light">
+    <div class="col mainContent bg-light pb-5">
 
         <div class="row mt-5 pb-3">
 
             <!--Appointments in dashboard-->
             <div class="col">
-                <div class="card shadow text-center">
-                    <div class="card-header "> Appointments </div>
+                <div class="card deck1 shadow text-center">
+                    <div class="card-header "> Upcoming Appointments </div>
                     <div class="card-body">
                         <div *ngFor="let user of users">
                             <div *ngIf="user.username==username">
                                 <div *ngIf="user.appointments!=null">
-                                    {{user.appointments}}
+                                    <div *ngFor="let appointment of user.appointments">
+                                        <div class="row p-3 mb-2">
+                                            <div class="col-4 border">{{appointment.date| date:'mediumDate'}} </div>
+                                            <div class="col border pt-2">{{appointment.appointment}}</div>                                        
+                                        </div>
+                                    </div>
                                 </div>
                                 <div *ngIf="user.appointments == 0">
                                     No appointments scheduled
@@ -31,7 +36,7 @@
             <!--Latest Events -->
             <div class="col">
 
-                <div class="card shadow text-center">
+                <div class="card deck1 shadow text-center">
                     <div class="card-header"> Quiz </div>
                     <div class="card-body">
                         <a class="btn btn-info" routerLink="/questions"> Take a Quiz </a>
@@ -42,7 +47,7 @@
 
             <!--REPORTS -->
             <div class="col">
-                <div class="card shadow text-center">
+                <div class="card deck1 shadow text-center">
                     <div class="card-header">Latest Event <a class="card-link small float-right"
                             routerLink="/events">See all
                             >></a> </div>
@@ -65,7 +70,7 @@
 
             <!--Reports-->
             <div class="col-4">
-                <div class="card shadow text-center">
+                <div class="card deck2 shadow text-center">
                     <div class="card-header "> Reports </div>
                     <div class="card-body">
                         Reports in review
@@ -75,7 +80,7 @@
 
             <!--Charts-->
             <div class="col-8">
-                <div class="card shadow text-center">
+                <div class="card deck2 shadow text-center">
                     <div class="card-header "> Charts </div>
                     <div class="card-body">
                         <div id="chartContainer" style="height: 370px; width: 100%;"></div>

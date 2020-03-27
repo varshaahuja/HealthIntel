@@ -1,5 +1,5 @@
 [
-{
+{   "id":"1",
     "email":"inteluser@gmail.com",
     "password":"password",
     "role":"user",
@@ -12,9 +12,25 @@
     "emergencyContactNumber":"22222",
     "emergencyContactName":"xxxxx",
     "address":"abcdefghij",
-    "appointments":[]
+    "pending":"yes",
+    "appointments":[
+        {
+            "id":"1110",
+            "user": "inteluser",
+            "date": "2020-04-21T09:28:56.321-10:00",
+            "appointment":"Mental Health advise",
+            "location": "112 St.George, Kearny, New Jersey, US, 07032"
+            },
+            {
+                "id":"1111",
+                "user": "inteluser",
+                "date": "2020-04-15T09:28:56.321-10:00",
+                "appointment":"Drug Rehab medicare",
+                "location": "16 Parker lane, Harisson, New Jersey, US, 07032"
+            }
+    ]
 },
-{
+{   "id":"2",
     "email":"inteladmin@gmail.com",
     "password":"password",
     "role": "admin",
@@ -27,6 +43,7 @@
     "emergencyContactNumber":"33333",
     "emergencyContactName":"yyyyy",
     "address":"abcdefghij",
+    "pending":"yes",
     "appointments":[]
 
 }
