@@ -15,7 +15,7 @@ export class SignupComponent implements OnInit {
 
   ngOnInit() {
     this.createForm();
-    this.index=4;
+    this.index=1;
 
   }
 

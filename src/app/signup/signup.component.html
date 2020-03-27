@@ -13,6 +13,8 @@
         <!-- Step One -->
         <div class="stepOne" *ngIf="index==1">
 
+          <div class="h4 text-primary p-3"> Step 1 of 4</div>
+
           <div class="form-row">
             <!-- First Name -->
             <div class="form-group col-6">
@@ -47,6 +49,14 @@
         <!-- Step Two -->
 
         <div class="stepTwo" *ngIf="index==2">
+
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:25%"> 25% </div>
+          </div>
+
+          <div class="h4 text-primary p-3"> Step 2 of 4</div>
+
+
           <!--Insurance Id-->
           <div class="form-group">
             <label class="col-form-label">Insurance ID</label>
@@ -127,6 +137,13 @@
         <!-- Step Three -->
         <div class="stepThree" *ngIf="index==3">
 
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%"> 50% </div>
+          </div>
+
+          <div class="h4 text-primary p-3"> Step 3 of 4</div>
+
+
           <!--Emergency Contact Name-->
           <div class="form-group">
             <label class="col-form-label">Emergency Contact Name</label>
@@ -159,6 +176,12 @@
 
         <!-- Step Four -->
         <div class="stepFour" *ngIf="index==4">
+
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:75%"> 75% </div>
+          </div>
+
+          <div class="h4 text-primary p-3"> Step 4 of 4</div>
 
           <!-- Username -->
           <div class="form-group">
