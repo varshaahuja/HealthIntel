@@ -1,41 +1,121 @@
 <div class="jumbotron bg-info">
 
   <div class="float-left">
-      <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
+    <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
   </div>
   <div class="text-center">
-      <span class="text-white h3"> Welcome! How can we help ? </span>
+    <span class="text-white h3"> Welcome! How can we help ? </span>
   </div>
 </div>
 
-<div class="row" *ngIf= "!user">
+<div class="row" *ngIf="!user">
   <div class="col text-center">
-      <div class="card">
-          <div class="card-body">
-              <p class="font-weight-bold"> Please log in to your account to access more help </p>
-              <button class="d-inline btn btn-info mr-3" routerLink="/login">Login</button>
-              <button class="d-inline btn btn-info" routerLink="/signup"> Signup</button>
-          </div>
+    <div class="card">
+      <div class="card-body">
+        <p class="font-weight-bold"> Please log in to your account to access more help </p>
+        <button class="d-inline btn btn-info mr-3" routerLink="/login">Login</button>
+        <button class="d-inline btn btn-info" routerLink="/signup"> Signup</button>
       </div>
+    </div>
   </div>
-  </div>
+</div>
 
-  
-  <div class="row mt-4">
-    <div class="col text-center">
-        <div class="card">
 
-          <div class="card-body">
-            <p class='h4 text-center'> About Us </p><hr>
+<div class="row mt-4">
+  <div class="col">
+    <div class="card">
+      <div class="card-header">
+        <p class='h3 text-center'> About Us </p>
+      </div>
+      <div class="card-body">
+
+        <div class="content p-5">
+
+          <div class="subContent">
+          <p class="line">
+            Are you an older adult with depression? Have you lost interest in activities you enjoy? Are you finding it
+            harder and harder to get through the day? Do you struggle with feelings of loneliness, helplessness and
+            hopelessness? Are you a person worried about the mental health of older adults at your home or surroundings?
+          </p>
+
+          <p class="h3">If so, you’re not alone!</p>
+
+          <p class="line">
+            Health Intel helps you to realize that neither is depression an inevitable part of getting older—nor is it a
+            sign of weakness or a character flaw. We at Health Intel give important opportunities for the detection and
+            management of depression in older adults.
+          </p>
+          </div>
+
+          <div class="subContent">
+
+            <p class="h3 heading">Vision</p>
+
+            <p class="line">Depression can happen to any of us as we age, regardless of our background or achievements.
+              And the symptoms of elderly depression can affect every aspect of our life, impacting our energy,
+              appetite, sleep, and interest in work, hobbies, and relationships.</p>
+
+            <p class="line">We at Health Intel, believe that the mental health conditions should be treated long before
+              they reach the most critical point in the disease process.</p>
+
+            <p class="line">We are committed to address mental health before it gets critical by addressing the symptoms
+              early, identifying the cause and planning an appropriate course of action on a path towards an
+              individual's overall health.</p>
 
           </div>
+
+          <div class="subContent">
+
+            <p class="h3 heading">Mission</p>
+
+            <p class="line">Health Intel is dedicated in addressing the needs of those with mental illness and promoting
+              the overall mental health of all older adults. Our work is driven by our commitment to promote mental
+              health as a critical part of overall wellness, including prevention services for all; early detection and
+              intervention for those at risk; integrated care, services, and support for those who need it; with
+              recovery as the goal.</p>
+
+          </div>
+
+          <div class="subContent">
+
+            <p class="h3 heading"> How do we work </p>
+
+            <p class="line">Health Intel tends to collect data from health insurance companies and sends a set of
+              questionnaires to all the people equal to and above 60 years who are registered with us to understand
+              their mental health based on the same data. The data collected by our web application decides if the
+              person filing it is under any kind of depression. The questionnaire would be sent every four months for
+              any healthy individual and is a case to case basis for individuals requiring support. The people can be
+              given benefits if they fill the questionnaire. Based on the response the individual would be grouped under
+              red, green and amber state and individuals or family members of the individuals or health insurance
+              companies can act accordingly. We identify treatment strategies such as measurement-based stepped care and
+              collaborative care that can substantially improve the effectiveness of treatment in this setting and we
+              highlight opportunities for addressing health disparities in geriatric depression care. We tend to
+              additionally entail the importance of partaking and supporting family caregivers of depressed older adults
+              by organizing various events, providing a 24 * 7 Chatbot service. </p>
+
+          </div>
+
+          <div class="subContent">
+
+          <blockquote class="blockquote">
+            <p class=" h5 mb-0">“I know what it’s like to want to die, and now I can say I honestly know what it means to want to live.”</p>
+            <footer class=" h3 blockquote-footer"> Kevin Breel</footer>
+          </blockquote>
+
+        </div>
 
         </div>
 
 
+
+      </div>
+
     </div>
-    </div>
+
+
+  </div>
+</div>
 
 
 
-  <app-footer></app-footer> 
+<app-footer></app-footer>
