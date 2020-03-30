@@ -21,7 +21,6 @@ export class LoginGuard implements CanActivate {
         else{
           this.router.navigate(['/userDashboard']);
         }
-
         return false;
       }
       else{
