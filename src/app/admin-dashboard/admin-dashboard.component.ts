@@ -44,7 +44,7 @@ export class AdminDashboardComponent implements OnInit {
       animationEnabled: true,
       exportEnabled: true,
       title: {
-        text: "Basic Column Chart in Angular"
+        text: "Zone Wise Report"
       },
       data: [{
         type: "column",

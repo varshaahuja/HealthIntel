@@ -1,10 +1,71 @@
 [
     {
-        "question":"How was your day ?",
-        "options":["hello", "hi", "bye", "asf"]
+        "question":"Do you have temper?",
+        "answer":["Yes", "No"]
     },
     {
-        "question":"How was your day ?",
-        "options":["hello", "hi", "bye", "asf"]
+        "question":"Do you feel anxious frequently?",
+        "answer":["Yes", "No", "Not Sure"]
+    },
+    {
+        "question":"Do you feel sad often?",
+        "answer":["Yes", "No"]
+    },    
+    {
+        "question":"How frequently do you feel the sad?",
+        "answer":["Multiple Times a day", "Once in a day","Few times a week", "Rarely"]
+    },
+    {
+        "question":"Do you feel depressed?",
+        "answer":["Yes", "No", "Not Sure"]
+    },
+    {
+        "question":"Do you feel burnt out?",
+        "answer":["No", "Only after excercise", "All the time"]
+    },
+    {
+        "question":"Do you like stay alone lately?",
+        "answer":["Yes", "No", "Sometimes"]
+    },
+    {
+        "question":"If so then is it because of your mood swings?",
+        "answer":["Yes", "No", "Maybe"]
+    },
+    {
+        "question":"Do you socialize?",
+        "answer":["Yes", "No", "I used to"]
+    },
+    {
+        "question":"How often do you socialize?",
+        "answer":["Atleast once a day", "Atleast once a week", "Atleast once a month", "Never"]
+    },
+    {
+        "question":"Do you like socializing these days?",
+        "answer":["Yes", "No", "Not Sure"]
+    },
+    {
+        "question":"Have you had any feelings of self harming lately?",
+        "answer":["Yes", "No", "Maybe"]
+    },
+    {
+        "question":"Do you feel like ending yourself to solve health issues?",
+        "answer":["Yes", "No", "Maybe"]
+    },
+    {
+        "question":"Do you think you need help?",
+        "answer":["Yes","No", "Maybe"]
+    },
+    {
+        "question":"Do you talk to your family about your day?",
+        "answer":["Yes","No", "Sometimes", "Not these days"]
+    },
+    {
+        "question":"Do you have temper?",
+        "answer":["Yes","No", "Maybe"]
+    },
+    {
+        "question":"Do you feel anxious frequently?",
+        "answer":["Yes","No","Not Sure"]
     }
+
 ]

@@ -20,6 +20,8 @@ import { PoliciesComponent } from '../policies/policies.component';
 import { AboutUsComponent } from '../about-us/about-us.component';
 import { QuestionsComponent } from '../questions/questions.component';
 import { AppointmentsComponent } from '../appointments/appointments.component';
+import { ChatbotComponent } from '../chatbot/chatbot.component';
+import { LoginGuard } from '../login.guard';
 
 const routes: Routes = [
 
@@ -30,7 +32,7 @@ const routes: Routes = [
     path: "signup", component:SignupComponent
   },
   {
-    path:"", component:HomePageComponent
+    path:"", component:HomePageComponent, canActivate:[LoginGuard]
   },
   {
     path:"adminDashboard", component:AdminDashboardComponent
@@ -83,6 +85,9 @@ const routes: Routes = [
   },
   {
     path:"appointments", component:AppointmentsComponent
+  },
+  {
+    path:"chatbot", component:ChatbotComponent
   }
 ]
 

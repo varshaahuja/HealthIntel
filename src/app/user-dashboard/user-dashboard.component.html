@@ -20,7 +20,7 @@
                                     <div *ngFor="let appointment of user.appointments">
                                         <div class="row p-3 mb-2">
                                             <div class="col-4 border">{{appointment.date| date:'mediumDate'}} </div>
-                                            <div class="col border pt-2">{{appointment.appointment}}</div>                                        
+                                            <div class="col border pt-2">{{appointment.appointment}}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -38,7 +38,7 @@
 
                 <div class="card deck1 shadow text-center">
                     <div class="card-header"> Quiz </div>
-                    <div class="card-body">
+                    <div class="card-body pt-5">
                         <a class="btn btn-info" routerLink="/questions"> Take a Quiz </a>
                     </div>
                 </div>
@@ -63,20 +63,21 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="row mt-5 pb-3">
 
             <!--Reports-->
-            <div class="col-4">
-                <div class="card deck2 shadow text-center">
+            <div class="col">
+                <div class="card deck1 shadow text-center">
                     <div class="card-header "> Reports </div>
                     <div class="card-body">
                         Reports in review
                     </div>
                 </div>
             </div>
+        </div>
+
+
+        <div class="row mt-5 pb-3">
+
 
             <!--Charts-->
             <div class="col-8">
@@ -87,11 +88,18 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Chatbot -->
+            <!--Reports-->
+            <div class="col-4">
+                <div class="card deck2 shadow">
+                    <div class="card-header text-center"> Talk to Bot </div>
+                    <div class="card-body pop">
+                        <app-chatbot></app-chatbot>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-
     </div>
-
 </div>
 <app-footer></app-footer>

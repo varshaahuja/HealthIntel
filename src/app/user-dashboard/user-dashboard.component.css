@@ -8,9 +8,17 @@
 }
 
 .deck2{
-    min-height: 50vh;
+    height: 50vh;
 }
 
 .card-header{
     font-weight: bold;
+}
+
+.pop{
+    
+    overflow-y: auto;
+
+right:    0;
+bottom:   0;
 }
