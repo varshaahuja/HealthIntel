@@ -18,7 +18,7 @@ export class LocalStorageService {
 
   constructor(private httpClient:HttpClient){}
 
- readonly token = environment.dialogFlow.angularBot;
+ readonly token = '31c47b8d2f374e0ca740d51a399e7c72';
 
   readonly client = new ApiAiClient({accessToken: this.token });
 
