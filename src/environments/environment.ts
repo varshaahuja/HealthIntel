@@ -4,6 +4,10 @@
 
 export const environment = {
   production: false,
+
+  dialogFlow: {
+    angularBot: '31c47b8d2f374e0ca740d51a399e7c72'
+  }
 };
 
 
