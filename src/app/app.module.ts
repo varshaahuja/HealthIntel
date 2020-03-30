@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { QuestionsComponent } from './questions/questions.component';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -26,8 +26,6 @@ import { InboxComponent } from './inbox/inbox.component';
 import { PoliciesComponent } from './policies/policies.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
-import { ChatbotComponent } from './chatbot/chatbot.component';
-import { LocalStorageService } from './local-storage.service';
 
 @NgModule({
   declarations: [
@@ -54,16 +52,14 @@ import { LocalStorageService } from './local-storage.service';
     PoliciesComponent,
     AboutUsComponent,
     AppointmentsComponent,
-    ChatbotComponent,
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     ReactiveFormsModule,
-    FormsModule,
     HttpClientModule
   ],
-  providers: [LocalStorageService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

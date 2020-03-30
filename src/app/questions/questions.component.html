@@ -6,17 +6,19 @@
   </div>
   <div class="col p-5">
 
-    <span class="h2 text-uppercase"> Quiz </span><hr>
 
-    <div class="card mb-3" *ngFor="let question of questions; let i = index">
+
+    <div class="card mb-3" *ngFor="let question of questions">
       <div class="card-header"> {{question.question}} </div>
       <div class="card-body">
-        <div *ngFor="let option of question.answer">
-          <input type="radio" id="huey" name="drone{{i}}" value="huey">
-          <label for="huey"> {{option}}</label>
+
+        <div *ngFor="let option of question.options">
+          <input type="radio" id="huey" name="drone" value="huey" checked>
+          <label for="huey">{{option}}</label>
         </div>
-      </div>      
+      </div>
     </div>
+
 
     <a class="btn btn-info btn-lg mt-3 float-right text-white"> Submit </a>
 
