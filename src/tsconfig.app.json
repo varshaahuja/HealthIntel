@@ -7,5 +7,9 @@
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
+  ],
+  "files": [
+    "../node_modules/api-ai-javascript/index.ts"
   ]
+  
 }
