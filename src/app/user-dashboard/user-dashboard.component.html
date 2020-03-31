@@ -20,7 +20,7 @@
                                     <div *ngFor="let appointment of user.appointments">
                                         <div class="row p-3 mb-2">
                                             <div class="col-4 border">{{appointment.date| date:'mediumDate'}} </div>
-                                            <div class="col border pt-2">{{appointment.appointment}}</div>                                        
+                                            <div class="col border pt-2">{{appointment.appointment}}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -68,16 +68,6 @@
 
         <div class="row mt-5 pb-3">
 
-            <!--Reports-->
-            <div class="col-4">
-                <div class="card deck2 shadow text-center">
-                    <div class="card-header "> Reports </div>
-                    <div class="card-body">
-                        Reports in review
-                    </div>
-                </div>
-            </div>
-
             <!--Charts-->
             <div class="col-8">
                 <div class="card deck2 shadow text-center">
@@ -87,10 +77,19 @@
                     </div>
                 </div>
             </div>
+       
+
+        <!--Reports-->
+        <div class="col-4">
+            <div class="card deck2 shadow text-center">
+                <div class="card-header "> Talk to Bot </div>
+                <div class="card-body">
+                    <app-chatbot></app-chatbot>
+                </div>
+            </div>
         </div>
 
-
-
+    </div>
     </div>
 
 </div>

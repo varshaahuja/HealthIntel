@@ -21,9 +21,9 @@ import { AboutUsComponent } from '../about-us/about-us.component';
 import { QuestionsComponent } from '../questions/questions.component';
 import { AppointmentsComponent } from '../appointments/appointments.component';
 import { LoginGuard } from '../login.guard';
+import { ChatbotComponent } from '../chatbot/chatbot.component';
 
 const routes: Routes = [
-
   {
     path: "login", component:LoginComponent
   },
