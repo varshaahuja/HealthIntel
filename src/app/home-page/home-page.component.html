@@ -1,13 +1,10 @@
 <div class="box bg-info">
-  News: Over a million people choose health intel care coverage.
+  "Happiness is a direction not a place"
 </div>
 <div class="banner text-center ">
   <div class="bannerContent">
   <h1><i class="fa fa-heart"></i> <span class="logo-title">Health Intel</span>  </h1>
   <p class="h3" > Start each day with a grateful heart </p>
-  <p class="bannerContent2">
-    Medicare Supplement Insurance plans can help pay for some out-of-pocket Medicare expenses.
-  </p>
 </div>
   <div class="buttons">
     <a class="btn btn-info shadow-lg border mr-5" routerLink="/signup"> Signup</a>
@@ -15,8 +12,8 @@
   </div>
 
 </div>
-<div class="box bg-info">
-  News: Over a million people choose health intel care coverage.
+<div class="box bg-info" *ngIf="news">
+  <a class="text-white" href="{{news.link}}">News: {{news.news}} </a>
 </div>
 
 <div class="healthcenter">
@@ -24,14 +21,14 @@
   <div class="row p-5">
 
     <div class="col-4">
+      <p class="cards" > Stay upto date with  latest trends in health care </p>
+    </div>
 
-      <p class="cards" > If you pay your premiums on time, your plan stays the same and can’t be canceled if you move within the U.S.</p>
+    <div class="col-4">
+      <p class="cards"> We are a health care company that's building a happier world. </p>
     </div>
     <div class="col-4">
-      <p class="cards"> If you apply for Medicare Supplement Insurance during your Open Enrollment Period, you cannot be denied coverage for pre - existing conditions.</p>
-    </div>
-    <div class="col-4">
-      <p class="cards"> There are no network restrictions with Medicare Supplement Insurance plans, so you can see any doctor who accepts Medicare patients.</p>
+      <span class="cards"> We are glad to help you ! </span><a class="cards" routerLink=""> Contact Us </a>
     </div>
 
   </div>

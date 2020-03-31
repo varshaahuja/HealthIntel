@@ -27,6 +27,7 @@ import { PoliciesComponent } from './policies/policies.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
 import { ChatbotComponent } from '../app/chatbot/chatbot.component';
+import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 
 
 
@@ -56,6 +57,7 @@ import { ChatbotComponent } from '../app/chatbot/chatbot.component';
     PoliciesComponent,
     AboutUsComponent,
     AppointmentsComponent,
+    TermsOfUseComponent,
   ],
   imports: [
     AppRoutingModule,

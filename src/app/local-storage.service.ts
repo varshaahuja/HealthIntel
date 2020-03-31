@@ -94,4 +94,8 @@ export class LocalStorageService {
     return this.httpClient.get('/assets/data/appointments.json');
   }
 
+  getAllNews(){
+    return this.httpClient.get('/assets/data/news.json');
+  }
+
 }

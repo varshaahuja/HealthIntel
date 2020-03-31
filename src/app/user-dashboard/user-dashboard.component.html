@@ -11,9 +11,9 @@
 
             <!--Appointments in dashboard-->
             <div class="col">
-                <div class="card deck1 shadow text-center">
+                <div class="card  shadow text-center">
                     <div class="card-header "> Upcoming Appointments </div>
-                    <div class="card-body">
+                    <div class="card-body deck1">
                         <div *ngFor="let user of users">
                             <div *ngIf="user.username==username">
                                 <div *ngIf="user.appointments!=null">
@@ -36,9 +36,9 @@
             <!--Latest Events -->
             <div class="col">
 
-                <div class="card deck1 shadow text-center">
+                <div class="card  shadow text-center">
                     <div class="card-header"> Quiz </div>
-                    <div class="card-body">
+                    <div class="card-body deck1">
                         <a class="btn btn-info" routerLink="/questions"> Take a Quiz </a>
                     </div>
                 </div>
@@ -47,11 +47,11 @@
 
             <!--REPORTS -->
             <div class="col">
-                <div class="card deck1 shadow text-center">
+                <div class="card  shadow text-center">
                     <div class="card-header">Latest Event <a class="card-link small float-right"
                             routerLink="/events">See all
                             >></a> </div>
-                    <div class="card-body">
+                    <div class="card-body deck1">
                         <div *ngIf="loading">
                             <i aria-hidden="true" class="fa fa-spinner fa-5x fa-spin"></i>
                         </div>
@@ -70,9 +70,9 @@
 
             <!--Charts-->
             <div class="col-8">
-                <div class="card deck2 shadow text-center">
+                <div class="card  shadow text-center">
                     <div class="card-header "> Charts </div>
-                    <div class="card-body">
+                    <div class="card-body deck2">
                         <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                     </div>
                 </div>
@@ -81,9 +81,9 @@
 
         <!--Reports-->
         <div class="col-4">
-            <div class="card deck2 shadow text-center">
+            <div class="card  shadow text-center">
                 <div class="card-header "> Talk to Bot </div>
-                <div class="card-body">
+                <div class="card-body deck2">
                     <app-chatbot></app-chatbot>
                 </div>
             </div>

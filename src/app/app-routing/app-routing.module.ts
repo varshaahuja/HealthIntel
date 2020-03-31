@@ -21,7 +21,7 @@ import { AboutUsComponent } from '../about-us/about-us.component';
 import { QuestionsComponent } from '../questions/questions.component';
 import { AppointmentsComponent } from '../appointments/appointments.component';
 import { LoginGuard } from '../login.guard';
-import { ChatbotComponent } from '../chatbot/chatbot.component';
+import { TermsOfUseComponent } from '../terms-of-use/terms-of-use.component';
 
 const routes: Routes = [
   {
@@ -78,6 +78,9 @@ const routes: Routes = [
   },
   {
     path: "aboutus", component:AboutUsComponent
+  },
+  {
+    path:"termsOfUse", component:TermsOfUseComponent
   },
   {
     path:"questions", component:QuestionsComponent
