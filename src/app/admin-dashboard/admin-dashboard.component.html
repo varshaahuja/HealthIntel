@@ -1,7 +1,9 @@
 <app-navbar>
 </app-navbar>
 <div class="row">
-    <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5"><app-sidebar></app-sidebar></div>
+    <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5">
+        <app-sidebar></app-sidebar>
+    </div>
 
     <div class="col mainContent bg-light pb-5 mr-3">
 
@@ -9,46 +11,23 @@
 
             <!--Appointments-->
             <div class="col">
-                <div class="card shadow deck1">
-                    <div class="card-header">
-                        Scheduled Appointments
-                    </div>
-                    <div class="card-body">
-                        <table class="table">
-                            <tr>
-                              <th>Appointment Id</th>
-                              <th>User</th>
-                              <th>Appointment Info</th>
-                              <th>Date</th>
-                              <th>Location</th>
-                            </tr>
-                
-                            <tr *ngFor="let appointment of allAppointments">
-                              <td>{{appointment.id}} </td>
-                              <td>{{appointment.user}} </td>
-                              <td>{{appointment.appointment}} </td>
-                              <td> {{appointment.date| date:'mediumDate' }} </td>
-                              <td> {{appointment.location}} </td>
-                            </tr>
-                          </table>
-                    </div>
-                    
-                    </div>
+                <div class="card shadow text-center p-5 bg-info deck1" *ngIf="allAppointments">
+                    <a class="h5  text-white" routerLink="/appointments"> Sheduled Appointments: {{allAppointments.length}}
+                    </a>
+                </div>
             </div>
 
             <!--Insurance Companies-->
             <div class="col">
-                <div class="card shadow deck1 ">
-                    <div class="card-header"> Insurance Companies </div>
-                    Bye World
+                <div class="card shadow text-center p-5 bg-info deck1" *ngIf="users">
+                    <a class="h5  text-white" routerLink="/viewInsurance"> Insurance Companies: {{users.length}} </a>
                 </div>
             </div>
 
             <!--Pending Report Analysis-->
             <div class="col">
-                <div class="card shadow deck1">
-                    <div class="card-header"> Pending Report Analysis</div>
-                    asda
+                <div class="card shadow text-center p-5 bg-info deck1" *ngIf="pending">
+                    <a class="h5  text-white" routerLink=""> Pending Report Analysis: {{pending.length}} </a>
                 </div>
             </div>
         </div>
@@ -56,50 +35,51 @@
         <div class="row mt-5 ">
 
             <!--Users-->
-                <div class="col-4">
-                    <div class="card shadow deck2">
-                        <div class="card-header"> Users </div>
-                        <div class="card-body">
-    
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <strong>Username</strong>
-                                        </td>
-                                        <td >
-                                            <strong >Insurance ID</strong>
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                    <tr *ngFor= "let user of users" >
-                                        <td>
-                                            {{user.username}}
-                                        </td>
-                                        <td>
-                                            {{user.insuranceId}}
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-info" (click)="viewProfile(user.id)"> View Profile </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+            <div class="col-4">
+                <div class="card shadow deck2">
+                    <div class="card-header"> Users </div>
+                    <div class="card-body">
+                      
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>Username</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Insurance ID</strong>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr *ngFor="let user of users">
+                                    <td>
+                                        {{user.username}}
+                                    </td>
+                                    <td>
+                                        {{user.insuranceId}}
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-info" (click)="viewProfile(user.id)"> View Profile
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!--Charts-->
+            <div class="col-8">
+                <div class="card shadow deck2">
+                    <div class="card-header">
+                        Cancellations
+                    </div>
+                    <div class="card-body mr-3">
+                        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
                     </div>
                 </div>
 
-            <!--Charts-->
-                <div class="col-8">
-                    <div class="card shadow deck2">
-                        <div class="card-header">
-                            Cancellations
-                        </div>
-                        <div class="card-body mr-3">
-                            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-                        </div>
-                    </div>
-                    
             </div>
         </div>
 

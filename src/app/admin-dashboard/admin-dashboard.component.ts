@@ -16,9 +16,14 @@ export class AdminDashboardComponent implements OnInit {
   loading=false;
   users:any
   allAppointments:any;
+  pending=[];
+  search:string;
+  searchUser:any;
+  
 
   ngOnInit() {
       this.getAllUsers();
+      this.getUser();
       this.getAllAppointments();
       this.drawChart();
 
@@ -28,6 +33,23 @@ export class AdminDashboardComponent implements OnInit {
   getAllUsers(){
     this.localStorageService.getAllUsers().subscribe(data =>{
       this.users= data;
+      for (var i=0; i<this.users.length;i++){
+        if(this.users[i].pending=='yes'){
+          this.pending.push(this.users[i]);
+        }
+      }
+    })
+  }
+
+  getUser(){
+    this.localStorageService.getAllUsers().subscribe(data =>{
+      this.searchUser= data;
+      for(var  i=0; i<this.users.length;i++){
+        if(this.users[i].username == this.search){
+          this.searchUser = this.users[i]
+        }
+      }
+
     })
   }
 
