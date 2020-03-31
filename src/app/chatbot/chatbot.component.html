@@ -6,7 +6,7 @@
         <input class="form-control" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text" placeholder="Click enter after message">
     </div>
     <div class="form-group">
-        <button class="btn btn-info btn-rounded"> >> </button>
+        <button class="btn btn-info btn-rounded" (click)="sendMessage()" > >> </button>
     </div>
 </div>
 
