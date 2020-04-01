@@ -66,15 +66,13 @@ export class AdminDashboardComponent implements OnInit {
       animationEnabled: true,
       exportEnabled: true,
       title: {
-        text: "Basic Column Chart in Angular"
+        text: "Zone Wise Report"
       },
       data: [{
         type: "column",
         dataPoints: [
           { y: 71, label: "Green", color: "#009900"},
-          { y: 55, label: "Yellow", color:"#e6e600" },
           { y: 65, label: "Amber", color:"#FFBF00" },
-          { y: 50, label: "Orange", color:"#FF7F00" },
           { y: 45, label: "Red", color:"#e60000" },
         ]
       }]
