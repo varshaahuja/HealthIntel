@@ -27,7 +27,7 @@
             <!--Pending Report Analysis-->
             <div class="col">
                 <div class="card shadow text-center p-5 bg-info deck1" *ngIf="pending">
-                    <a class="h5  text-white" routerLink=""> Pending Report Analysis: {{pending.length}} </a>
+                    <a class="h5  text-white" routerLink="/pendingReports"> Pending Report Analysis: {{pending.length}} </a>
                 </div>
             </div>
         </div>
@@ -39,9 +39,9 @@
                 <div class="card shadow deck2">
                     <div class="card-header"> Users </div>
                     <div class="card-body">
-                      
-                        <table class="table">
-                            <tbody>
+
+                        <table class="table table-striped table-bordered table-sm row-border hover"  datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
+                            <thead>
                                 <tr>
                                     <td>
                                         <strong>Username</strong>
@@ -51,6 +51,8 @@
                                     </td>
                                     <td></td>
                                 </tr>
+                            </thead>
+                            <tbody>
                                 <tr *ngFor="let user of users">
                                     <td>
                                         {{user.username}}

@@ -18,7 +18,7 @@
                     <table class="table">
                         <tr>
                             <td>
-                                <h5>Event Name</h5>
+                                <h5>Event Name <a class="fa fa-edit ml-2 text-info" *ngIf="role=='admin'"></a></h5>
                                 <span class="text-muted"> {{event.eventName }}</span>
                             </td>
                         </tr>

@@ -30,7 +30,8 @@ import { ChatbotComponent } from '../app/chatbot/chatbot.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { ReportsComponent } from './reports/reports.component';
 import { ViewReportComponent } from './view-report/view-report.component';
-
+import { DataTablesModule } from 'angular-datatables';
+import { PendingReportsComponent } from './pending-reports/pending-reports.component';
 
 
 @NgModule({
@@ -62,9 +63,11 @@ import { ViewReportComponent } from './view-report/view-report.component';
     TermsOfUseComponent,
     ReportsComponent,
     ViewReportComponent,
+    PendingReportsComponent
   ],
   imports: [
     AppRoutingModule,
+    DataTablesModule,
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,

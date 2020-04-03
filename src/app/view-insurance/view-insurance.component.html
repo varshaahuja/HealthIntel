@@ -10,25 +10,21 @@
 
 
     <div class="card mt-5">
-
+      <div class="card-header text-center h5"> View Insurance Companies </div>
       <div class="card-body">
 
-        <table class="table">
-
+        <table class="table table-striped table-bordered table-sm row-border hover"  datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">            
+          <thead>
           <tr>
-            <td>
-             <strong>Insurance Companies</strong>
-            </td>
+            <th>Insurance Companies</th>
 
-            <td>
-              <strong>Permit ID</strong>
-             </td>
+            <th>Permit ID</th>
 
-            <td>
-              <strong>No. of Users </strong>
-            </td>
-            <td></td>
+            <th>No. of Users</th>
+            <th></th>
           </tr>
+        </thead>
+        <tbody>
           <tr *ngFor="let insurance of insurances">
 
             <td> {{insurance.insuranceName}}</td>
@@ -36,6 +32,7 @@
             <td> {{insurance.IRDA}} </td>
             <td> <a class="btn btn-info text-white"> View Profile </a> </td>
           </tr>
+        </tbody>
         </table>
       </div>
 

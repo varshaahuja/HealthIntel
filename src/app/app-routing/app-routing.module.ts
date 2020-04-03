@@ -24,6 +24,7 @@ import { LoginGuard } from '../login.guard';
 import { TermsOfUseComponent } from '../terms-of-use/terms-of-use.component';
 import { ReportsComponent } from '../reports/reports.component';
 import { ViewReportComponent } from '../view-report/view-report.component';
+import { PendingReportsComponent } from '../pending-reports/pending-reports.component';
 
 const routes: Routes = [
   {
@@ -92,6 +93,9 @@ const routes: Routes = [
   },
   {
     path:"reports", component:ReportsComponent
+  },
+  {
+    path:"pendingReports", component:PendingReportsComponent
   },
   {
     path:"viewReport/:id", component: ViewReportComponent

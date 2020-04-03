@@ -15,6 +15,8 @@ export class AppointmentsComponent implements OnInit {
   role:any;
   user:any
   users:any;
+  dtOptions: DataTables.Settings = {};
+
 
   ngOnInit() {
     this.role = this.localStorageService.getRole();
