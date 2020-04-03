@@ -28,6 +28,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
 import { ChatbotComponent } from '../app/chatbot/chatbot.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
+import { ReportsComponent } from './reports/reports.component';
+import { ViewReportComponent } from './view-report/view-report.component';
 
 
 
@@ -58,6 +60,8 @@ import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
     AboutUsComponent,
     AppointmentsComponent,
     TermsOfUseComponent,
+    ReportsComponent,
+    ViewReportComponent,
   ],
   imports: [
     AppRoutingModule,

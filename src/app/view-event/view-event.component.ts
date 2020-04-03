@@ -12,6 +12,7 @@ export class ViewEventComponent implements OnInit {
 
   loading=false;
   event: any;
+  role:any;
   eventId:any;
   events: any;
 
@@ -20,6 +21,7 @@ export class ViewEventComponent implements OnInit {
   ngOnInit() {
     this.loading=true;
     this.eventId = this.activatedRoute.snapshot.params['id'];
+    this.role= this.localStorageService.getRole();
      this.getEventDetails(this.eventId);
     this.loading = false;
   }

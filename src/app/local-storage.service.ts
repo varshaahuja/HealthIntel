@@ -78,6 +78,10 @@ export class LocalStorageService {
     return this.httpClient.get('/assets/data/events.json');
   }
 
+  getAllReports(){
+    return this.httpClient.get('/assets/data/reports.json');
+  }
+
   getAllInsurance(){
     return this.httpClient.get('/assets/data/insurance.json');
   }

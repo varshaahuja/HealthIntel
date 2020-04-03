@@ -22,6 +22,8 @@ import { QuestionsComponent } from '../questions/questions.component';
 import { AppointmentsComponent } from '../appointments/appointments.component';
 import { LoginGuard } from '../login.guard';
 import { TermsOfUseComponent } from '../terms-of-use/terms-of-use.component';
+import { ReportsComponent } from '../reports/reports.component';
+import { ViewReportComponent } from '../view-report/view-report.component';
 
 const routes: Routes = [
   {
@@ -87,6 +89,12 @@ const routes: Routes = [
   },
   {
     path:"appointments", component:AppointmentsComponent
+  },
+  {
+    path:"reports", component:ReportsComponent
+  },
+  {
+    path:"viewReport/:id", component: ViewReportComponent
   }
 ]
 
