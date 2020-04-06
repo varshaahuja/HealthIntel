@@ -40,7 +40,11 @@
               <td> {{report.stress}} </td>
               <td> {{report.happiness}} </td>
               <td> {{report.physicalHealth}} </td>
-              <td> <button class="btn btn-info" (click)="viewReport(report.id)"> View Report </button> </td>
+              <td>
+                <a download="Report" class="btn btn-info" target="_blank" href="/assets//Report.pdf">
+                Download Report
+              </a>
+             </td>
             </tr>
           </tbody>
           </table>
