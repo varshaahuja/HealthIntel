@@ -1,3 +1,99 @@
-<p>
-  terms-of-use works!
-</p>
+<div class="jumbotron bg-info">
+
+  <div class="float-left">
+    <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
+  </div>
+  <div class="text-center">
+    <span class="text-white h3"> Our Terms and Conditions </span>
+  </div>
+</div>
+
+<div class="row" *ngIf="!user">
+  <div class="col text-center">
+    <div class="card">
+      <div class="card-body">
+        <p class="font-weight-bold"> Please log in to your account to access more help </p>
+        <button class="d-inline btn btn-info mr-3" routerLink="/login">Login</button>
+        <button class="d-inline btn btn-info" routerLink="/signup"> Signup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col">
+    <div class="card">
+
+      <div class="card-body">
+        <p class='h4 text-center'> Terms Of Use </p>
+
+        <div class="mainContent border p-5">
+
+          <p>
+            Welcome to Heath Intel’s web service. These Health Intel Terms of Use (the “Terms”) apply to those websites
+            and software applications that we operate and that contain a link to these Terms (an “Application” or
+            together the “Applications”).
+          </p>
+
+          <p>
+            By using our Applications you are agreeing to these Terms. Please read them carefully.
+          </p>
+          <p>
+            Use of the Site is subject to the following terms of use. Health Intel may modify these terms and conditions
+            at any time, and such modifications shall be effective immediately upon posting the modified terms and
+            conditions on Health Intel Site. You can determine when these Terms were last revised by referring to the
+            “LAST UPDATED” legend at the bottom of these Terms. Reviewing the agreement periodically to be aware of such
+            modifications, and accessing or using the service constitutes your acceptance of the agreement as it appears
+            at the time of your access or use. Notwithstanding the foregoing, any modifications to these Terms shall not
+            apply to any dispute between us arising prior to the date on which we post the revised Terms that contain
+            such modifications.
+          </p>
+
+          <p>
+            Please note that once you leave an Application or arrive at an Application from another non-Health Intel
+            location, either by using a link we may have provided for your convenience or by specifying your own
+            destination, Health Intel accepts no responsibility for the content, products and/or services provided at
+            these non-Health Intel locations. Health Intel does not control, endorse, promote or have any affiliation
+            with any other website or software application unless expressly stated herein.
+          </p>
+          <p>
+            From time to time, Health Intel may offer website visitors the opportunity to participate in additional
+            features or services through Health Intel Site. You may be required to enter into additional agreements or
+            authorizations before you can access such features or services.
+          </p>
+          <p>
+            ou agree that you will not:
+          </p>
+          <ul>
+            <li>Upload or transmit any communications or content of any type that may infringe or violate any rights of
+              any party</li>
+            <li>Use this website for any purpose in violation of local, state, national or international laws</li>
+            <li>Use this site as a means to distribute advertising or other unsolicited material to any third party</li>
+            <li>Use this website to post or transmit material that is unlawful, obscene, defamatory, threatening,
+              harassing, abusive, slanderous, hateful or embarrassing to any other person or entity</li>
+            <li>Attempt to disable, "hack" or otherwise interfere with the proper functioning of this website</li>
+          </ul>
+          <p>
+            If you use any part of the Site requiring secure access, you are responsible for maintaining the
+            confidentiality of your account and password and for restricting access to your computer, and you agree to
+            accept responsibility for all activities that occur under your account or password.
+          </p>
+          <p class="h4">Termination</p>
+          <p>
+            Health Intel may suspend or terminate your use of or access to the applications if you fail to comply with
+            these terms. Such suspension or termination may result in the permanent deletion of you information or other
+            previously available content.
+          </p>
+
+          <p class="h5">
+            YOU MUST AFFIRMATIVELY CONSENT TO USE OUR OFFERINGS, AND BY DOING SO, YOU CONSENT TO THESE TERMS AND
+            CONDITIONS, INCLUDING OUR PRIVACY POLICY. IF YOU DO NOT AGREE TO OUR TERMS AND CONDITIONS, INCLUDING OUR
+            PRIVACY POLICY, IN THEIR ENTIRETY, YOU MAY NOT ACCESS OR OTHERWISE USE THE SERVICES, CONTENT (AS THAT TERM
+            IS DEFINED BELOW), PROMOTIONS OR SITE IN ANY MANNER OR FORM WHATSOEVER.
+          </p>
+
+          <blockquote><footer>Terms of Use update: 03/28/2020</footer></blockquote>
+
+
+
+        </div>
