@@ -1,41 +1,192 @@
 <div class="jumbotron bg-info">
 
   <div class="float-left">
-      <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
+    <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
   </div>
   <div class="text-center">
-      <span class="text-white h3"> Welcome! How can we help ? </span>
+    <span class="text-white h3"> Welcome! How can we help ? </span>
   </div>
 </div>
 
-<div class="row" *ngIf= "!user">
+<div class="row" *ngIf="!user">
   <div class="col text-center">
-      <div class="card">
-          <div class="card-body">
-              <p class="font-weight-bold"> Please log in to your account to access more help </p>
-              <button class="d-inline btn btn-info mr-3" routerLink="/login">Login</button>
-              <button class="d-inline btn btn-info" routerLink="/signup"> Signup</button>
-          </div>
+    <div class="card">
+      <div class="card-body">
+        <p class="font-weight-bold"> Please log in to your account to access more help </p>
+        <button class="d-inline btn btn-info mr-3" routerLink="/login">Login</button>
+        <button class="d-inline btn btn-info" routerLink="/signup"> Signup</button>
       </div>
+    </div>
   </div>
-  </div>
+</div>
 
-  
-  <div class="row mt-4">
-    <div class="col text-center">
-        <div class="card">
 
-          <div class="card-body">
-            <p class='h4 text-center'> About Us </p><hr>
+<div class="row mt-4">
+  <div class="col">
+    <div class="card">
+
+      <div class="card-body">
+        <p class='h4 text-center'> About Us </p>
+
+        <div class="mainContent border p-5">
+
+          <blockquote> “I know what it’s like to want to die, and now I can say I honestly know what it means to want
+            to live.”
+            <footer>– Kevin Breel</footer>
+          </blockquote>
+
+          <div class="content1">
+            <p>Are you an older adult with depression? Have you lost enthusiasm for exercises you use to appreciate? Is
+              it
+              true that you are thinking that it's increasingly hard to overcome the day? Do you battle with sentiments
+              of
+              dejection, weakness and misery? It is safe to say that you are an individual stressed over the emotional
+              wellness of more established grown-ups at your home or environment?</p>
+            <br>
+            <p class="h5">If so, you’re not alone!</p>
+            <br>
+            <p>
+              Health Intel helps you to realize that neither is depression an inevitable part of getting older—nor is it
+              a
+              sign of weakness or a character flaw. We at Health Intel give important opportunities for the detection
+              and
+              management of depression in older adults.</p>
+          </div>
+          <br>
+
+          <div class="content2">
+            <p class="h4">Vision</p>
+            <hr>
+            <p>
+              Depression can happen to any of us as we age, paying little heed to our experience or accomplishments.
+              What's more, the symptoms of old age depression can influence each part of our life, affecting our
+              vitality, craving, rest, and enthusiasm for work, interests, and conne
+            </p>
+            <p>
+              We at Health Intel, accept that the psychological well-being conditions ought to be dealt with some time
+              before they arrive at the critical point in the ailment procedure.
+            </p>
+            <p>
+              We are committed to address emotional well-being before it gets critical by addressing the indications
+              early, distinguishing the reason and arranging a suitable game-plan on a way towards a person's general
+              well being.
+            </p>
+          </div>
+          <br>
+
+          <div class="content3">
+            <p class="h4">Mission</p>
+            <hr>
+            <p>
+              Health Intel is devoted in tending to the necessities of those with psychological sickness and advancing
+              the general emotional health of every single older adult. Our work is driven by our duty to advance
+              emotional wellness as a basic piece of generally speaking well being, including counteraction
+              administrations for all; early discovery and mediation for those in danger;incorporated consideration,
+              administrations, and backing for the individuals who need it; with recuperation as the objective.
+            </p>
+          </div>
+          <br>
+          <div class="content4">
+            <p class="h4">How do we work </p>
+            <hr>
+            <p>
+              Health Intel gives important opportunities for the detection and management of depression in elder. We
+              intend to collect data from health insurance companies and share a set of questionnaire to all the people
+              aging 60 and above to understand their mental health, and based on the data collected our web application
+              decides if the person filing it is under any kind of depression. The questionnaire would be sent every
+              four months or earlier based on the person's initial report and the people can be given benefits if they
+              fill the questionnaire. It wouldn't directly disclose the purpose of any questions being asked but
+              internally based on response the person would be divided under red, green and amber state. Based on the
+              reports the person’s emergency contact or the Health Intel services or Health insurance companies can act
+              ahead. We distinguish treatment methodologies, for example, estimation based ventured care and community
+              oriented consideration that can considerably improve the viability of treatment and we feature open doors
+              for tending to wellbeing inconsistencies in geriatric misery care. We will in general also involve the
+              significance of sharing and supporting family guardians of discouraged more established grown-ups by
+              sorting out different occasions.
+            </p>
 
           </div>
+          <br>
+          <div class="content5">
+
+            <p class="h4">Health Intel Approach </p>
+            <hr>
+
+            <ol type="A">
+
+              <li class="contentA">
+                <p class="h5"> Detection</p>
+                <p>
+                  Geriatric depression is seriously undetected, undiagnosed, and undertreated. Several tools are
+                  available
+                  to facilitate screening for depression. A single-item screening question is the simplest among all
+                  screening tools. A very simple question asking the client about their current mood with a simple yes
+                  or
+                  no had a sensitivity of 70% and a specificity of 89%. Health Intel performs The Patient Health
+                  Questionnaire-2 (PHQ-2) on clients which asks patient about their mood for a longer period of time:
+                </p>
+                <ol>
+                  <li>During the past weeks have you often been bothered by feeling down, depressed, or hopeless? </li>
+                  <li>During the past month have you often been bothered by little interest or pleasure in doing things?
+                  </li>
+                </ol>
+                <br>
+                <p>
+                  This questionnaire is useful in identifying patients at high risk for depression, and it has a
+                  sensitivity of 100%, a specificity of 77%, and a positive predictive value of 14% in older adults.
+                  Such brief screening tools can be easily administered by the Health Insurance team and appropriate
+                  treatment will be suggested.
+                </p>
+                <p>Excessively positive reaction to these polls should caution the Health Insurance group or specialist
+                  to additionally assess the patient for sadness. Not every discouraged patient will answer decidedly to
+                  these surveys, and to address the chance of 'bogus negatives,' the medical coverage group may wish to
+                  approach extra inquiries concerning burdensome side effects for patients who seem discouraged, who
+                  experience issues taking part in care, or whose utilitarian disability appears to be conflicting with
+                  target clinical sickness.</p>
+              </li>
+
+              <li class="contentB">
+                <p class="h5"> Follow-up Approach </p>
+                <p>
+                  A subsequent consideration of how to deal with treatment at first presents patients with moderately
+                  basic nonintrusive mediations and takings to a great deal of extraordinary treatment draws near if
+                  patients don't appear to be up without a doubt.
+                </p>
+                <p>As the initial phase right now, persistent and steady relatives might be urged to attempt
+                  self-coordinated intercessions, for example, wonderful occasions planning, physical, or social
+                  exercises. At the point when these endeavors neglect to improve gloom, progressively escalated
+                  intercessions can be offered as guided self improvement, which consolidates a self improvement manual
+                  with a predetermined number of brief treatment meetings. Increasingly serious psychosocial
+                  intercessions would then be able to be offered at the outpatient level, day treatment, and inpatient
+                  level if patients don't improve their true form. To encourage such treatment escalation, it is
+                  essential to utilize target estimates, for example, the Physical Health Questionnaire to screen
+                  burdensome side effects after some time.
+                </p>
+              </li>
+
+              <li class="contentC">
+                <p class="h5">24 Hours Online Chatbot </p>
+                <p>
+                  We have implemented the feature of Chabot in our web application which allows users to connect to
+                  doctors 24X7, if they need any kind of immediate help. Chabot feature is similar to help feature where
+                  users can interact online and figure out solutions for their queries immediately.
+                </p>
+              </li>
+            </ol>
+
+
+          </div>
+
 
         </div>
-
+      </div>
 
     </div>
-    </div>
+
+
+  </div>
+</div>
 
 
 
-  <app-footer></app-footer> 
+<app-footer></app-footer>

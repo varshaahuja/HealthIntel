@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-3">
+    <div class="col-3 text-center font-weight-bold">
        Your Message
     </div>
     <div class="col-6">
@@ -10,11 +10,12 @@
     </div>
 </div>
 
-<ng-container *ngFor= "let message of messages | async ">
+<ul class="list-group" *ngFor= "let message of messages | async ">
 
-<div class="message border p-3" [ngClass]="{ 'from': message.sentBy === 'bot','to':message.sentBy ==='user'}">
+<li class="list-group-item border-0 message" [ngClass]="{ 'from': message.sentBy === 'bot','to':message.sentBy ==='user'}">
+    
   <strong>{{message.sentBy}}:</strong> {{message.content}}
-</div> 
-</ng-container>
+</li> 
+</ul>
 
 
