@@ -1,40 +1,276 @@
 <div class="jumbotron bg-info">
 
   <div class="float-left">
-      <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
+    <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
   </div>
   <div class="text-center">
-      <span class="text-white h3">Our Policies </span>
+    <span class="text-white h3">Our Policies </span>
   </div>
 </div>
 
 <div class="row" *ngIf="!user">
   <div class="col text-center">
-      <div class="card">
-          <div class="card-body">
-              <p class="font-weight-bold"> Please log in to your account to access more help </p>
-              <button class="d-inline btn btn-info mr-3" routerLink="/login">Login</button>
-              <button class="d-inline btn btn-info" routerLink="/signup"> Signup</button>
-          </div>
+    <div class="card">
+      <div class="card-body">
+        <p class="font-weight-bold"> Please log in to your account to access more help </p>
+        <button class="d-inline btn btn-info mr-3" routerLink="/login">Login</button>
+        <button class="d-inline btn btn-info" routerLink="/signup"> Signup</button>
       </div>
+    </div>
   </div>
-  </div>
+</div>
 
-  <div class="row mt-4">
-    <div class="col text-center">
-        <div class="card">
+<div class="row mt-4">
+  <div class="col">
+    <div class="card">
 
-          <div class="card-body">
-            <p class='h4 text-center'> Policies </p><hr>
+      <div class="card-body">
+        <p class='h4 text-center'> Policies </p>
+
+        <div class="mainContent border p-5">
+
+          <div class="content1">
+            <p class="h4"> Disclaimer Statement </p>
+            <hr><hr>
+            <p>
+              Health Intel’s website & Online Community is for informational purposes only and is not meant to serve as
+              medical advice or to replace consultation with your physician or mental health professional.
+            </p>
+            <p>
+              Use of Health Intel’s website & Online Community constitutes an agreement by the users not to hold Health
+              Intel or any of its employees or officers liable or responsible for information posted to discussion
+              boards and other forums by persons or entities not associated with Health Intel.
+            </p>
+            <p>
+              You acknowledge that the information on the Website is provided "as is" for general information only. It
+              is not intended as medical advice, and should not be relied upon, as a substitute for consultations with
+              qualified health professionals who are familiar with your individual medical needs.
+            </p>
+            <p>
+              This site includes chat and discussion boards. When you chat or join discussions, you agree to abide by
+              all these Terms and Conditions. We want our Community to be a safe, comfortable, and friendly environment.
+              We can remove any messages or solicitations that do not meet the standards of these Terms and Conditions.
+              Health Intel reserves the right to immediately terminate a user's registration if we become aware and
+              determine that the user is violating any of these Terms and Conditions or any of the chat and discussion
+              board guidelines as enumerated wherein.
+            </p>
+            <p>
+              Commercial solicitation, chain letters, junk mail, "spam", non-commercial or bulk solicitation is
+              prohibited.
+            </p>
+            <p>
+              Threatening harassing, libelous, defamatory, vulgar, profane, obscene, abusive, harmful, sexually
+              oriented, racially offensive, inaccurate, or otherwise objectionable material of any kind or nature, is
+              prohibited.
+            </p>
+            <p>
+              Unlawful material, or any material that encourages or promotes conduct that constitutes a criminal
+              offense, or might give rise to civil liability or otherwise violate any applicable local, state, Federal
+              or international law or regulation, or encourage the use of controlled substances, is prohibited. Posting
+              content or participating in any form of discussion with the intention to commit any illegal activity is
+              strictly prohibited.
+            </p>
+          </div>
+          <br>
+          <div class="content2">
+            <p class="h5">HEALTH AND HUMAN SERVICES’ (HHS) ON-DISCRIMINATIOM POLICY:</p>
+            <hr>
+            <p>
+              HHS has issued a policy explicitly requiring employees to serve all individuals who are eligible for the
+              department's programs without regard to any non-merit factor, including race, national origin, color,
+              religion, sex, sexual orientation, gender identity, disability (physical or mental), age, status as a
+              parent, or genetic information.
+            </p>
+          </div>
+          <br>
+          <div class="content3">
+            <p class="h4">PRIVACY AND SECURITY POLICY</p>
+            <hr>
+            <p>
+              The protection and confidentiality of your data is crucial to to us. We therefore only process your data
+              to the extent that:
+            </p>
+            <ul>
+              <li>It is necessary to provide the Health Intel services you are requesting. </li>
+              <li>You have given your consent to the processing.</li>
+            </ul>
+            <p>
+              Your Data will be confidential to us and only respective Doctors and Health Insurance Team will able to
+              access it. We always separately obtain consent from you for the processing of your health data. You can
+              give your consent to the processing of this data, by clicking on the respective button. Your consent will
+              be logged by us.
+            </p>
+            <p class="h4">Limitation Of Liability</p>
+            <hr>
+            <p>
+              You agree that you will hold harmless Health Intel and its officers, directors, employees, and volunteers
+              from all claims arising out of or related to your access or use of, or your inability to access or use,
+              this Website or the information contained in this Website or other websites to which it is linked. This
+              includes, but is not limited to, information or materials viewed or downloaded from this Website or
+              another website to which it is linked that appear to you or are construed by you to be obscene, offensive,
+              defamatory, or that infringe upon your intellectual property rights. In no event will Health Intel or the
+              information we collect.
+            </p>
+          </div>
+
+          <div class="content4">
+            <p class="h4">Personal Information Collected:</p>
+            <hr>
+            <p>
+              For the purposes of this Privacy Policy, personal information shall mean individually identifiable
+              information from or about an individual. We collect Personal Information from you primarily in three (3)
+              ways:
+            </p>
+            <ol>
+              <li>When you register to become a Member on the Site.</li>
+              <li>
+                When you access the Site and provide information in connection with your use of the Health
+                Intel Offerings or Heath Intel's Health program. In addition, when you access and/or use the Site and/or
+                Health Intel Offerings, and based on our legitimate interest to improve the quality of the Health Intel
+                Offerings, we may collect certain usage data, such as:
+                <ol type="a">
+                  <li>The number of times that you visit the Site;</li>
+                  <li> The specific Health Intel Offerings accessed, as well as the frequency and duration of use
+                    associated with them; and </li>
+                  <li>Other analyses and data associated with your access to, and use of, the Site and/or Health Intel
+                    Offerings (collectively, “Usage Data”).</li>
+                </ol>
+              </li>
+              <li>
+                We also may collect information and responses you provide when participating in activities on the Site,
+                which may include activity postings, survey responses, assessment responses and any other data you
+                generate in using the Site and/or Health Intel Offerings (“User Responses”).
+              </li>
+            </ol>
+          </div>
+
+          <div class="content5">
+            <p class="h4">Site Registration:</p>
+            <hr>
+            <p>
+              The personal information that you must supply on the site in order to obtain access to the Health Intel
+              Offerings may include, without limitation:
+            </p>
+            <ol type="a">
+              <li> Your full name </li>
+              <li>Your e-mail address</li>
+              <li>Your telephone number</li>
+              <li>Your date of birth</li>
+              <li>Your home address</li>
+              <li>Your user name and password</li>
+              <li>A unique I.D. you receive from your healthcare company or health plan, your employee I.D. or other
+                employer issued I.D.; and/or </li>
+              <li>Any and all other information requested on the applicable registration form (collectively, “Site
+                Registration Data”). </li>
+            </ol>
+          </div>
+
+          <div class="content6">
+            <p class="h4">Health Related Data</p><hr>
+            <p>
+              Within the app, you can run through a 10 day screening phase to get an assessment of whether you are
+              suffering from depression. During this screening, you will answer various questions and let the app know
+              how you are feeling. Data provided will be confidential and will only be accessed by Doctors or Health
+              Insurance Team.
+            </p>
+            <p class="h5">For what purpose we need your data</p>
+            <ul>
+              <li>Health Intel collects processes and uses the data mentioned under to provide the services. By
+                providing us with your information, we can provide our services. </li>
+              <li>You are not obliged to provide your personal data. The use of our web app and related services is
+                voluntary .However, if you don’t wish to provide us with necessary data ,we cannot provide services
+                specified for you. </li>
+              <li>Health Intel transmits your health data in a completely anonymous form to the Health Insurance and
+                Doctors for research purposes.</li>
+              <li>Your data will be stored by us as long as this is necessary for the use of our app and the services
+                associated with it. The anonymous data can also be stored indefinitely for research purposes.</li>
+            </ul>
+          </div>
+
+          <div class="content7">
+            <p class="h4">How to Delete Your Data</p><hr>
+            <p>
+              You can delete your data by clicking on “Delete all saved data” in the settings of the app under “Manage
+              your data”. This will irrevocably delete all your data from our databases.
+            </p>
+          </div>
+
+          <div class="content8">
+            <p class="h4">Other Rights you have as a user</p><hr>
+            <p>
+              As a user of our Web app, you have the following data protection rights, depending on the circumstances of
+              the specific case:
+            </p>
+
+            <ul>
+              <li>
+                <strong>Disclosure :</strong>To receive information about your personal data processed by us and to
+                request access to your personal data and/or copies of these data. This includes information on the
+                purpose of use, the category of data used, its recipients and authorized persons and, if possible, the
+                planned duration of data storage or, if this is not possible, the criteria for determining this
+                duration.
+              </li>
+              <li>
+                <strong>Correction, deletion or limitation of processing :</strong>To request the correction, deletion
+                or limitation of the processing of your personal data, e.g. by sending us an e-mail. if (i) the data are
+                incomplete or incorrect, (ii) they are no longer necessary for the purposes for which they were
+                collected, (iii) the consent on which the processing was based has been revoked, or (iv) you have
+                successfully exercised your right to object to data processing; in cases where data is processed by
+                third parties, we will forward your requests for correction, deletion or limitation of the processing to
+                these third parties, unless this proves impossible or involves a disproportionate effort.
+              </li>
+
+              <li>
+                <strong>Opposition to the processing :</strong>To object to the processing for reasons arising from your
+                particular situation.
+              </li>
+
+              <li>
+                <strong>Transferability of data : </strong>To receive the personal data concerning you that you have
+                provided to us in a structured, current and machine-readable format and to transmit this data to another
+                responsible person without obstruction by us; you may also have the right to request
+                that we transmit the personal data directly to another responsible person, insofar as this is
+                technically feasible.
+              </li>
+
+              <li>
+                <strong>Refusal and revocation of consent :</strong>To refuse your consent or – without affecting the
+                legality of data processing before the revocation – to revoke your consent to the processing of your
+                personal data at any time;
+              </li>
+
+              <li>
+                <strong>Automatic decisions:</strong>To require that you be subject to a decision based exclusively on
+                automated processing only in the exceptional cases provided by law if that decision has legal effect
+                against you or significantly similarly affects you; should such an automated decision take place in
+                exceptional cases, you have the right to obtain information on the logic involved and the scope of the
+                intended effects.
+              </li>
+            </ul>
+          </div>
+
+          <div class="content9">
+            <p class="h4">Terms Of Use</p>
+            <hr>
+            This website with its home page in the domain "HEALTHINTEL.COM" (the "Website") is a complimentary
+            information service offered by Health intel at no charge to users of the World Wide Web, with the express
+            condition that these users agree to be bound by the terms and conditions set forth in this User Agreement.
+            Health Intel reserves the right to change these terms and conditions any time, and you must consult the most
+            recent version of this User Agreement (not an older cached version) each time you view the Website. Use of
+            this Website constitutes your acceptance of all of the following terms and conditions.
 
           </div>
 
         </div>
 
+      </div>
 
     </div>
-    </div>
+
+
+  </div>
+</div>
 
 
 
-  <app-footer></app-footer> 
+<app-footer></app-footer>
