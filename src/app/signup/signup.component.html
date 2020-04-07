@@ -195,7 +195,7 @@
           <!-- Password -->
           <div class="form-group">
             <label class="col-form-label">Password</label>
-            <input type="text" id="password" class="form-control" formControlName="password" placeholder="Password"
+            <input type="password" id="password" class="form-control" formControlName="password" placeholder="Password"
               required>
 
             <div *ngIf="formErrors.password" class="text-danger">{{formErrors.password}} </div>
@@ -204,7 +204,7 @@
           <!--Confirm Password -->
           <div class="form-group">
             <label class="col-form-label">Confirm Password</label>
-            <input type="text" id="confirmPassword" class="form-control" formControlName="confirmPassword"
+            <input type="password" id="confirmPassword" class="form-control" formControlName="confirmPassword"
               placeholder="confirmPassword" required>
 
             <div *ngIf="formErrors.confirmPassword" class="text-danger">{{formErrors.confirmPassword}} </div>

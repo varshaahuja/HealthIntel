@@ -12,7 +12,7 @@
             <div class="card mt-5">
                 <div class="card-header">
                     <span class="float-left font-weight-bold pt-2"> Event Details </span>
-                    <button class="btn btn-info float-right" *ngIf ="role =='admin'">Edit</button>
+                    <button class="btn btn-info float-right" *ngIf ="role =='admin'">Save</button>
                 </div>
                 <div class="card-body">
                     <table class="table">
@@ -24,19 +24,19 @@
                         </tr>
                         <tr>
                             <td>
-                                <h5>Location</h5>
+                                <h5>Location<a class="fa fa-edit ml-2 text-info" *ngIf="role=='admin'"></a></h5>
                                 <span class="text-muted">{{event.location}} </span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <h5>Date</h5>
+                                <h5>Date<a class="fa fa-edit ml-2 text-info" *ngIf="role=='admin'"></a></h5>
                                 <span class="text-muted">{{event.date | date:'mediumDate'}} </span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <h5>Description</h5>
+                                <h5>Description<a class="fa fa-edit ml-2 text-info" *ngIf="role=='admin'"></a></h5>
                                 <span class="text-muted"> </span>
                             </td>
                         </tr>

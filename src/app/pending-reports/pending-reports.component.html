@@ -38,15 +38,28 @@
               <td> {{report.username }} </td>
               <td> {{report.insuranceId}} </td>
               <td class="text-center">
-                <a download="Report" class="btn btn-info" target="_blank" href="/assets//Report.pdf">
-                Generate Report
-              </a>
+                <button class=" btn btn-info" value="Sign Up" data-toggle="modal"
+                data-target="#exampleModalCenter"> Generate Report </button>
              </td>
             </tr>
           </tbody>
           </table>
         </div>
         </div>
+
+                  <!-- Forgot Password Modal-->
+                  <div class="modal" id="exampleModalCenter" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body text-center">
+                          <strong> Report has been successfully generated </strong>
+                          <hr>
+                          <button class="btn btn-info" data-dismiss="modal" routerLink="/">Close</button>
+                        </div>
+        
+                      </div>
+                    </div>
+                  </div>
       
     
     
