@@ -1,38 +1,69 @@
 <div class="box bg-info">
-  "Happiness is a direction not a place"
+  "Life is so much better when you're laughing"
 </div>
 <div class="banner text-center ">
   <div class="bannerContent">
-  <h1><i class="fa fa-heart"></i> <span class="logo-title">Health Intel</span>  </h1>
-  <p class="h3" > Start each day with a grateful heart </p>
-</div>
+    <h1><i class="fa fa-heart"></i> <span class="logo-title">Health Intel</span> </h1>
+    <p class="h3"> Start each day with a grateful heart </p>
+  </div>
   <div class="buttons">
     <a class="btn btn-info shadow-lg border mr-5" routerLink="/signup"> Signup</a>
     <a class="btn btn-info shadow-lg border" routerLink="/login"> Login</a>
   </div>
 
 </div>
+<!--
 <div class="box bg-info" *ngIf="news">
   <a class="text-white" href="{{news.link}}">News: {{news.news}} </a>
-</div>
+</div>-->
 
 <div class="healthcenter">
 
   <div class="row p-5">
 
     <div class="col-4">
-      <p class="cards" > Stay upto date with  latest trends in health care </p>
+      <div class="row">
+        <div class="col-3">
+          <i class="fa fa-newspaper text-info icon"></i>
+        </div>
+        <div class="col">
+          <p class="cards float-right"> Stay upto date with latest trends in health care </p><a class="cards"
+            href="https://www.cvshealth.com/news-and-insights" target="_blank"> Read News <i
+              class="fas fa-caret-right"></i> </a>
+        </div>
+      </div>
     </div>
 
     <div class="col-4">
-      <p class="cards"> We are a health care company that's building a happier world. </p>
+      <div class="row">
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <i class="fas fa-hand-holding-heart text-info icon"></i>
+        </div>
+        <div class="col">
+          <p class="h4">About Us</p>
+          <hr>
+          <p class="cards"> We are a health care company that's building a happier world. </p><a class="cards"
+            routerLink=""> Get to Know us <i class="fas fa-caret-right"></i> </a>
+        </div>
+      </div>
     </div>
     <div class="col-4">
-      <span class="cards"> We are glad to help you ! </span><a class="cards" routerLink=""> Contact Us </a>
+      <div class="row">
+        <div class="col-3">
+          <i class="fas fa-address-book icon text-info"></i>
+        </div>
+        <div class="col">
+          <p class="h4">Contact Us</p>
+          <hr>
+          <p class="cards"> We are glad to help you ! </p><a class="cards" routerLink=""> Reach us <i
+              class="fas fa-caret-right"></i> </a>
+        </div>
+      </div>
+
     </div>
+
 
   </div>
-
-
-</div>
-<app-footer></app-footer>
+  <app-footer></app-footer>
