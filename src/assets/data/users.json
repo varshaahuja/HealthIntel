@@ -43,7 +43,7 @@
     "emergencyContactNumber":"33333",
     "emergencyContactName":"yyyyy",
     "address":"abcdefghij",
-    "pending":"yes",
+    "pending":"no",
     "appointments":[]
 
 }

@@ -9,12 +9,13 @@ import { LocalStorageService } from '../local-storage.service';
 export class ViewInsuranceComponent implements OnInit {
 
   constructor(private localStorageService:LocalStorageService) { }
-
+  loading=false;
   insurances:any;
   ngOnInit() {
+    this.loading=true;
      this.localStorageService.getAllInsurance().subscribe(data=>{
       this.insurances = data;
-      console.log(this.insurances)
+      this.loading=false;
     });
   }
 

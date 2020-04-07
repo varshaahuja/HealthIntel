@@ -13,9 +13,7 @@ export class ReportsComponent implements OnInit {
   allReports:any;
   role:any;
   user:any;
-  elem:any;
-  dtOptions: DataTables.Settings = {};
-  
+  elem:any;  
   constructor(private localStorageService:LocalStorageService, private router:Router, private httpClient:HttpClient) { 
   }
 

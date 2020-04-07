@@ -1,3 +1,59 @@
-<p>
-  pending-reports works!
-</p>
+<app-navbar>
+</app-navbar>
+<div class="row">
+  <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5">
+    <div class="adminSidebar" *ngIf="role=='admin'">
+      <app-sidebar></app-sidebar>
+    </div>
+
+    <div class="userSidebar" *ngIf="role=='user'">
+      <app-sidebar></app-sidebar>
+    </div>
+  </div>
+
+  <div class="col p-5">
+    <div class="card inbox mt-3">
+      
+      <div class="card-header h4 text-center"> Pending Reports </div>
+      <!--User Page Appointments-->
+     
+        <div class="card-body" *ngIf="pending==null">
+          No Pending Reports
+        </div>
+
+        <div class="card-body" *ngIf="pending!=null">
+          <div *ngIf="loading==false">
+          <table class="table table-striped table-bordered table-sm row-border hover"  datatable>            
+          <thead>
+            <tr>
+              <th> User ID</th>
+              <th>Username</th>
+              <th>Insurance</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr *ngFor="let report of pending">
+              <td>{{report.id}} </td>
+              <td> {{report.username }} </td>
+              <td> {{report.insuranceId}} </td>
+              <td class="text-center">
+                <a download="Report" class="btn btn-info" target="_blank" href="/assets//Report.pdf">
+                Generate Report
+              </a>
+             </td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+        </div>
+      
+    
+    
+    </div>
+
+  </div>
+</div>
+<div *ngIf="role=='user'">
+  <app-footer></app-footer>
+</div>
