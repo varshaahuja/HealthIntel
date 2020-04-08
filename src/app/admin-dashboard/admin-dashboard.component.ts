@@ -70,6 +70,12 @@ export class AdminDashboardComponent implements OnInit {
       title: {
         text: "Zone Wise Report"
       },
+      axisX: {
+        title: "Zone",
+      },
+      axisY: {
+        title: "Count",
+      },
       data: [{
         type: "column",
         dataPoints: [

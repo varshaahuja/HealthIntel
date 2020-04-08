@@ -1,20 +1,17 @@
 <div class="jumbotron bg-info">
+  <div class="row">
+    <div class="col">
+      <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
+    </div>
 
-  <div class="float-left">
-    <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
-  </div>
-  <div class="text-center">
-    <span class="text-white h3"> Our Terms and Conditions </span>
-  </div>
-</div>
+    <div class="col text-center">
+      <span class="text-white h3"> Our Terms and Conditions </span>
+    </div>
 
-<div class="row" *ngIf="!user">
-  <div class="col text-center">
-    <div class="card">
-      <div class="card-body">
-        <p class="font-weight-bold"> Please log in to your account to access more help </p>
-        <button class="d-inline btn btn-info mr-3" routerLink="/login">Login</button>
-        <button class="d-inline btn btn-info" routerLink="/signup"> Signup</button>
+    <div class="col">
+      <div class="float-right" *ngIf="!user">
+            <button class="d-inline btn btn-outline-info bg-light mr-3" routerLink="/login">Login</button>
+            <button class="d-inline btn btn-outline-info bg-light" routerLink="/signup"> Signup</button>
       </div>
     </div>
   </div>
