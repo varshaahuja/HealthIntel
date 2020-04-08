@@ -18,7 +18,7 @@
           <div class="form-row">
             <!-- First Name -->
             <div class="form-group col-6">
-              <label class="col-form-label" for="firstName"> First Name</label>
+              <label class="col-form-label" for="firstName"> First Name <span class="text-danger">*</span>  </label>
               <input type="text" id="firstName" class="form-control" formControlName="firstName"
                 placeholder="First Name" required>
               <div *ngIf="formErrors.firstName" class="text-danger">{{formErrors.firstName}} </div>
@@ -26,7 +26,7 @@
 
             <!-- Last Name -->
             <div class="form-group col-6">
-              <label class="col-form-label"> Last Name</label>
+              <label class="col-form-label"> Last Name<span class="text-danger">*</span></label>
               <input type="text" id="lastName" class="form-control" formControlName="lastName" placeholder="Last Name"
                 required>
               <div *ngIf="formErrors.lastName" class="text-danger">{{formErrors.lastName}} </div>
@@ -35,7 +35,7 @@
 
           <!--Email-->
           <div class="form-group">
-            <label class="col-form-label">Email</label>
+            <label class="col-form-label">Email<span class="text-danger">*</span></label>
             <input type="text" id="email" class="form-control" formControlName="email" placeholder="Email Id" required>
             <div *ngIf="formErrors.email" class="text-danger">{{formErrors.email}} </div>
           </div>
@@ -59,7 +59,7 @@
 
           <!--Insurance Id-->
           <div class="form-group">
-            <label class="col-form-label">Insurance ID</label>
+            <label class="col-form-label">Insurance ID<span class="text-danger">*</span></label>
             <input type="text" id="insuranceId" class="form-control" formControlName="insuranceId"
               placeholder="Insurance ID" required>
 
@@ -69,7 +69,7 @@
 
           <!-- SSN -->
           <div class="form-group">
-            <label class="col-form-label">Social Security Number</label>
+            <label class="col-form-label">Social Security Number<span class="text-danger">*</span></label>
             <input type="text" id="ssn" class="form-control" formControlName="ssn" placeholder="SSN" required>
 
             <div *ngIf="formErrors.ssn" class="text-danger">{{formErrors.ssn}} </div>
@@ -77,7 +77,7 @@
 
           <!--Contact Number-->
           <div class="form-group">
-            <label class="col-form-label">Contact Number</label>
+            <label class="col-form-label">Contact Number<span class="text-danger">*</span></label>
             <input type="text" id="contactNumber" class="form-control" formControlName="contactNumber"
               placeholder="Contact Number" required>
 
@@ -86,7 +86,7 @@
 
           <!-- Address -->
           <div class="form-group">
-            <label class="col-form-label"> Street Address</label>
+            <label class="col-form-label"> Street Address<span class="text-danger">*</span></label>
             <input type="text" id="address" class="form-control" formControlName="address" placeholder="address"
               required>
 
@@ -98,7 +98,7 @@
 
             <!-- City -->
             <div class="form-group col-4">
-              <label class="col-form-label">City</label>
+              <label class="col-form-label">City<span class="text-danger">*</span></label>
               <input type="text" id="city" class="form-control" formControlName="city" placeholder="City" required>
 
               <div *ngIf="formErrors.city" class="text-danger">{{formErrors.city}} </div>
@@ -106,7 +106,7 @@
 
             <!-- State -->
             <div class="form-group col-4">
-              <label class="col-form-label">State</label>
+              <label class="col-form-label">State<span class="text-danger">*</span></label>
               <input type="text" id="state" class="form-control" formControlName="state" placeholder="State" required>
 
               <div *ngIf="formErrors.state" class="text-danger">{{formErrors.state}} </div>
@@ -114,7 +114,7 @@
 
             <!-- Zip Code -->
             <div class="form-group col-4">
-              <label class="col-form-label">Zipcode</label>
+              <label class="col-form-label">Zipcode<span class="text-danger">*</span></label>
               <input type="text" id="zipcode" class="form-control" formControlName="zipcode" placeholder="zipcode"
                 required>
 
@@ -146,7 +146,7 @@
 
           <!--Emergency Contact Name-->
           <div class="form-group">
-            <label class="col-form-label">Emergency Contact Name</label>
+            <label class="col-form-label">Emergency Contact Name<span class="text-danger">*</span></label>
             <input type="text" id="emergencyContactName" class="form-control" formControlName="emergencyContactName"
               placeholder="Emergency Contact Name" required>
 
@@ -155,7 +155,7 @@
 
           <!--Emergency Contact Number-->
           <div class="form-group">
-            <label class="col-form-label">Emergency Contact Number</label>
+            <label class="col-form-label">Emergency Contact Number<span class="text-danger">*</span></label>
             <input type="text" id="emergencyContactNumber" class="form-control" formControlName="emergencyContactNumber"
               placeholder="Emergency Contact Number" required>
 
@@ -185,7 +185,7 @@
 
           <!-- Username -->
           <div class="form-group">
-            <label class="col-form-label">User Name</label>
+            <label class="col-form-label">User Name<span class="text-danger">*</span></label>
             <input type="text" id="userName" class="form-control" formControlName="username" placeholder="User Name"
               required>
 
@@ -194,7 +194,7 @@
 
           <!-- Password -->
           <div class="form-group">
-            <label class="col-form-label">Password</label>
+            <label class="col-form-label">Password<span class="text-danger">*</span></label>
             <input type="password" id="password" class="form-control" formControlName="password" placeholder="Password"
               required>
 
@@ -203,7 +203,7 @@
 
           <!--Confirm Password -->
           <div class="form-group">
-            <label class="col-form-label">Confirm Password</label>
+            <label class="col-form-label">Confirm Password<span class="text-danger">*</span></label>
             <input type="password" id="confirmPassword" class="form-control" formControlName="confirmPassword"
               placeholder="confirmPassword" required>
 
@@ -226,7 +226,7 @@
             </div>
             <div class="form-group text-center col">
               <button type="submit" class=" btn btn-info btn-lg" value="Sign Up" data-toggle="modal"
-                data-target="#exampleModalCenter"> Sign Up </button>
+                data-target="#exampleModalCenter" [disabled]="!signupForm.valid"> Sign Up </button>
             </div>
           </div>
 
