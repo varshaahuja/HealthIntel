@@ -1,25 +1,21 @@
 <div class="jumbotron bg-info">
+  <div class="row">
+    <div class="col">
+      <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
+    </div>
 
-  <div class="float-left">
-    <a class="h3 text-white text-decoration-none" (click)="logo()"><i class="fa fa-heart"></i>Health Intel</a>
-  </div>
-  <div class="text-center">
-    <span class="text-white h3"> Welcome! How can we help ? </span>
-  </div>
-</div>
+    <div class="col text-center">
+      <span class="text-white h3"> Welcome! </span>
+    </div>
 
-<div class="row" *ngIf="!user">
-  <div class="col text-center">
-    <div class="card">
-      <div class="card-body">
-        <p class="font-weight-bold"> Please log in to your account to access more help </p>
-        <button class="d-inline btn btn-info mr-3" routerLink="/login">Login</button>
-        <button class="d-inline btn btn-info" routerLink="/signup"> Signup</button>
+    <div class="col">
+      <div class="float-right" *ngIf="!user">
+        <button class="d-inline btn btn-outline-info bg-light mr-3" routerLink="/login">Login</button>
+        <button class="d-inline btn btn-outline-info bg-light" routerLink="/signup"> Signup</button>
       </div>
     </div>
   </div>
 </div>
-
 
 <div class="row mt-4">
   <div class="col">
@@ -37,20 +33,16 @@
 
           <div class="content1">
             <p>Are you an older adult with depression? Have you lost enthusiasm for exercises you use to appreciate? Is
-              it
-              true that you are thinking that it's increasingly hard to overcome the day? Do you battle with sentiments
-              of
-              dejection, weakness and misery? It is safe to say that you are an individual stressed over the emotional
-              wellness of more established grown-ups at your home or environment?</p>
+              it true that you are thinking that it's increasingly hard to overcome the day? Do you battle with
+              sentiments of dejection, weakness and misery? It is safe to say that you are an individual stressed over
+              the emotional wellness of more established grown-ups at your home or environment?</p>
             <br>
             <p class="h5">If so, you’re not alone!</p>
             <br>
             <p>
               Health Intel helps you to realize that neither is depression an inevitable part of getting older—nor is it
-              a
-              sign of weakness or a character flaw. We at Health Intel give important opportunities for the detection
-              and
-              management of depression in older adults.</p>
+              a sign of weakness or a character flaw. We at Health Intel give important opportunities for the detection
+              and management of depression in older adults.</p>
           </div>
           <br>
 
@@ -60,7 +52,7 @@
             <p>
               Depression can happen to any of us as we age, paying little heed to our experience or accomplishments.
               What's more, the symptoms of old age depression can influence each part of our life, affecting our
-              vitality, craving, rest, and enthusiasm for work, interests, and conne
+              vitality, craving, rest, and enthusiasm for work, interests, and connections.
             </p>
             <p>
               We at Health Intel, accept that the psychological well-being conditions ought to be dealt with some time
@@ -118,12 +110,10 @@
                 <p class="h5"> Detection</p>
                 <p>
                   Geriatric depression is seriously undetected, undiagnosed, and undertreated. Several tools are
-                  available
-                  to facilitate screening for depression. A single-item screening question is the simplest among all
-                  screening tools. A very simple question asking the client about their current mood with a simple yes
-                  or
-                  no had a sensitivity of 70% and a specificity of 89%. Health Intel performs The Patient Health
-                  Questionnaire-2 (PHQ-2) on clients which asks patient about their mood for a longer period of time:
+                  available to facilitate screening for depression. A single-item screening question is the simplest
+                  among all screening tools. A very simple question asking the client about their current mood with a
+                  simple yes or no had a sensitivity of 70% and a specificity of 89%. Health Intel performs The Patient
+                  Health Questionnaire on clients which asks patient about their mood for a longer period of time:
                 </p>
                 <ol>
                   <li>During the past weeks have you often been bothered by feeling down, depressed, or hopeless? </li>
@@ -152,7 +142,8 @@
                   basic nonintrusive mediations and takings to a great deal of extraordinary treatment draws near if
                   patients don't appear to be up without a doubt.
                 </p>
-                <p>As the initial phase right now, persistent and steady relatives might be urged to attempt
+                <p>
+                  As the initial phase right now, persistent and steady relatives might be urged to attempt
                   self-coordinated intercessions, for example, wonderful occasions planning, physical, or social
                   exercises. At the point when these endeavors neglect to improve gloom, progressively escalated
                   intercessions can be offered as guided self improvement, which consolidates a self improvement manual

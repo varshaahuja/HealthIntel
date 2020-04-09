@@ -1,9 +1,11 @@
 <app-navbar>
 </app-navbar>
 <div class="row">
-    <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5"><app-sidebar></app-sidebar></div>
+    <div class="col-2 sidebar bg-white shadow mr-2 border-bottom pt-5">
+        <app-sidebar></app-sidebar>
+    </div>
     <div class="col p-5">
-        
+
         <div class="card mt-5">
 
             <div class="card-header">
@@ -15,55 +17,74 @@
                 <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
                     <!--Event Name -->
                     <div class="row">
-                        <label  class="col-md-2 col-form-label text-left">
+                        <label class="col-md-2 col-form-label text-left">
                             Event Name
                         </label>
                         <div class="col">
                             <div class="form-group">
-                                <input type="text" id="eventName" class="form-control" formControlName="eventName" placeholder="Event Name" required>
+                                <input type="text" id="eventName" class="form-control" formControlName="eventName"
+                                    placeholder="Event Name" required>
                             </div>
                         </div>
                     </div>
 
                     <!-- Address -->
                     <div class="row">
-                        <label  class="col-md-2 col-form-label text-left">
+                        <label class="col-md-2 col-form-label text-left">
                             Address
                         </label>
                         <div class="col">
                             <div class="form-group">
-                                <input type="text" id="address" class="form-control" formControlName="location" placeholder="Address" required>
+                                <input type="text" id="address" class="form-control" formControlName="location"
+                                    placeholder="Address" required>
                             </div>
                         </div>
                     </div>
 
                     <!-- Date -->
                     <div class="row">
-                        <label  class="col-md-2 col-form-label text-left">
+                        <label class="col-md-2 col-form-label text-left">
                             Date
                         </label>
                         <div class="col">
                             <div class="form-group">
-                                <input type="date" id="date" class="form-control" formControlName="location" placeholder="Date" required>
+                                <input type="date" id="date" class="form-control" formControlName="date"
+                                    placeholder="Date" required>
                             </div>
                         </div>
                     </div>
 
                     <!-- Description -->
                     <div class="row">
-                        <label  class="col-md-2 col-form-label text-left">
+                        <label class="col-md-2 col-form-label text-left">
                             Description
                         </label>
                         <div class="col">
                             <div class="form-group">
-                                <input type="text" id="date" class="form-control" formControlName="location" placeholder="Description" required>
+                                <input type="text" id="description" class="form-control" formControlName="description"
+                                    placeholder="Description" required>
                             </div>
                         </div>
                     </div>
 
-                    <input type="submit" class="btn btn-info text-uppercase m-3 p-2 pl-3 pr-3 border-0" value="Submit">
+                    <button class="btn btn-info text-uppercase m-3 p-2 pl-3 pr-3 border-0" data-toggle="modal"
+                        data-target="#exampleModalCenter">Submit </button>
 
                 </form>
+            </div>
+
+            <!-- Forgot Password Modal-->
+            <div class="modal" id="exampleModalCenter" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <strong> Event has been successfully added </strong>
+                            <hr>
+                            <button class="btn btn-info" data-dismiss="modal" routerLink="/">Close</button>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
 

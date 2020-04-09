@@ -37,13 +37,13 @@
     "username":"inteladmin",
     "firstName": "intel",
     "lastName":"admin",
-    "insuranceId":"12345",
+    "insuranceId":"12949",
     "ssn":"54321",
     "contactNumber":"22222",
     "emergencyContactNumber":"33333",
     "emergencyContactName":"yyyyy",
     "address":"abcdefghij",
-    "pending":"yes",
+    "pending":"no",
     "appointments":[]
 
 }

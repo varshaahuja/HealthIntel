@@ -31,11 +31,13 @@ export class AdminDashboardComponent implements OnInit {
 
   //Retrieve All Users
   getAllUsers(){
+    this.loading=true;
     this.localStorageService.getAllUsers().subscribe(data =>{
       this.users= data;
       for (var i=0; i<this.users.length;i++){
         if(this.users[i].pending=='yes'){
           this.pending.push(this.users[i]);
+          this.loading=false;
         }
       }
     })
@@ -67,6 +69,12 @@ export class AdminDashboardComponent implements OnInit {
       exportEnabled: true,
       title: {
         text: "Zone Wise Report"
+      },
+      axisX: {
+        title: "Zone",
+      },
+      axisY: {
+        title: "Count",
       },
       data: [{
         type: "column",

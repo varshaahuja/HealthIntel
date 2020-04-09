@@ -1,0 +1,13 @@
+.deck2{
+    height: 50vh;
+    overflow: scroll;
+}
+
+.card-header{
+    font-weight: bold;
+}
+
+.list{
+    overflow: auto;
+    height: 25em;
+}
